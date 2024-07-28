@@ -88,7 +88,7 @@
 			"options": {
 				"set": "Sets the prefix",
 				"prefix": "The prefix you want to set",
-				"reset":"Resets the prefix to the default one"
+				"reset": "Resets the prefix to the default one"
 			}
 		},
 		"setup": {
@@ -109,7 +109,6 @@
 				"info": "Shows the song request channel"
 			}
 		},
-
 		"8d": {
 			"description": "on/off 8d filter",
 			"messages": {
@@ -213,7 +212,6 @@
 				"disabled": "`✅` | Vibrato filter has been `DISABLED`."
 			}
 		},
-
 		"autoplay": {
 			"description": "Toggles autoplay",
 			"messages": {
@@ -291,9 +289,9 @@
 		},
 		"queue": {
 			"description": "Shows the current queue",
-			"now_playing": "Now playing: [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"now_playing": "Now playing: [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"live": "LIVE",
-			"track_info": "{index}. [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"title": "Queue",
 			"page_info": "Page {index} of {total}"
 		},
@@ -338,7 +336,7 @@
 				"search_error": "There was an error while searching."
 			},
 			"messages": {
-				"added_to_queue": "Added [{{title}}]({{uri}}) to the queue."
+				"added_to_queue": "Added [{title}]({uri}) to the queue."
 			}
 		},
 		"seek": {
@@ -349,10 +347,10 @@
 			"errors": {
 				"invalid_format": "Invalid time format. Examples: seek 1m, seek 1h 30m",
 				"not_seekable": "This track is not seekable.",
-				"beyond_duration": "Cannot seek beyond the song duration of {{length}}."
+				"beyond_duration": "Cannot seek beyond the song duration of {length}."
 			},
 			"messages": {
-				"seeked_to": "Seeked to {{duration}}"
+				"seeked_to": "Seeked to {duration}"
 			}
 		},
 		"shuffle": {
@@ -364,7 +362,7 @@
 		"skip": {
 			"description": "Skips the current song",
 			"messages": {
-				"skipped": "Skipped [{{title}}]({{uri}})."
+				"skipped": "Skipped [{title}]({uri})."
 			}
 		},
 		"skipto": {
@@ -376,7 +374,7 @@
 				"invalid_number": "Please provide a valid number."
 			},
 			"messages": {
-				"skipped_to": "Skipped to song number {{number}}."
+				"skipped_to": "Skipped to song number {number}."
 			}
 		},
 		"stop": {
@@ -397,7 +395,6 @@
 				"set": "Set the volume to {volume}"
 			}
 		},
-
 		"addsong": {
 			"description": "Adds a song to the playlist",
 			"options": {
@@ -560,7 +557,6 @@
 			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
 			"no_mention_everyone": "You can't use this command with everyone or here.",
 			"error": "An error occurred: `{error}`",
-
 			"no_voice_channel_queue": "You are not connected to a voice channel to queue songs.",
 			"no_permission_connect_speak": "I don't have enough permission to connect/speak in <#{channel}>.",
 			"different_voice_channel_queue": "You are not connected to <#{channel}> to queue songs."

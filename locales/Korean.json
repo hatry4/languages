@@ -26,7 +26,8 @@
 			"not_found": "`{cmdName}` 명령어는 존재하지 않네요.",
 			"help_cmd": "**설명:** {description}\n**사용법:** {usage}\n**예시:** {examples}\n**별칭:** {aliases}\n**카테고리:** {category}\n**쿨다운:** {cooldown} 초\n**권한:** {premUser}\n**봇 권한:** {premBot}\n**개발자 전용:** {dev}\n**슬래시 명령어:** {slash}\n**인수:** {args}\n**플레이어:** {player}\n**DJ:** {dj}\n**DJ 권한:** {djPerm}\n**음성:** {voice}",
 			"footer": "명령어에 대한 자세한 정보를 얻으려면 {prefix}help <command>를 사용하세요."
-		},"botinfo": {
+		},
+		"botinfo": {
 			"description": "Information about the bot",
 			"content": "Bot Information:\n- **Operating System**: {osInfo}\n- **Uptime**: {osUptime}\n- **Hostname**: {osHostname}\n- **CPU Architecture**: {cpuInfo}\n- **CPU Usage**: {cpuUsed}%\n- **Memory Usage**: {memUsed}MB / {memTotal}GB\n- **Node Version**: {nodeVersion}\n- **Discord Version**: {discordJsVersion}\n- **Connected to** {guilds} guilds, {channels} channels, and {users} users\n- **Total Commands**: {commands}"
 		},
@@ -288,9 +289,9 @@
 		},
 		"queue": {
 			"description": "Shows the current queue",
-			"now_playing": "Now playing: [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"now_playing": "Now playing: [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"live": "LIVE",
-			"track_info": "{index}. [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"title": "Queue",
 			"page_info": "Page {index} of {total}"
 		},
@@ -335,7 +336,7 @@
 				"search_error": "There was an error while searching."
 			},
 			"messages": {
-				"added_to_queue": "Added [{{title}}]({{uri}}) to the queue."
+				"added_to_queue": "Added [{title}]({uri}) to the queue."
 			}
 		},
 		"seek": {
@@ -346,10 +347,10 @@
 			"errors": {
 				"invalid_format": "Invalid time format. Examples: seek 1m, seek 1h 30m",
 				"not_seekable": "This track is not seekable.",
-				"beyond_duration": "Cannot seek beyond the song duration of {{length}}."
+				"beyond_duration": "Cannot seek beyond the song duration of {length}."
 			},
 			"messages": {
-				"seeked_to": "Seeked to {{duration}}"
+				"seeked_to": "Seeked to {duration}"
 			}
 		},
 		"shuffle": {
@@ -361,7 +362,7 @@
 		"skip": {
 			"description": "Skips the current song",
 			"messages": {
-				"skipped": "Skipped [{{title}}]({{uri}})."
+				"skipped": "Skipped [{title}]({uri})."
 			}
 		},
 		"skipto": {
@@ -373,7 +374,7 @@
 				"invalid_number": "Please provide a valid number."
 			},
 			"messages": {
-				"skipped_to": "Skipped to song number {{number}}."
+				"skipped_to": "Skipped to song number {number}."
 			}
 		},
 		"stop": {

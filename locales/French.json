@@ -26,7 +26,8 @@
 			"not_found": "Cette commande `{cmdName}` n'existe pas.",
 			"help_cmd": "**Description :** {description}\n**Utilisation :** {usage}\n**Exemples :** {examples}\n**Alias :** {aliases}\n**Catégorie :** {category}\n**Cooldown :** {cooldown} secondes\n**Permissions :** {premUser}\n**Permissions Bot :** {premBot}\n**Réservé aux Développeurs :** {dev}\n**Commande Slash :** {slash}\n**Arguments :** {args}\n**Player :** {player}\n**DJ :** {dj}\n**Permissions DJ :** {djPerm}\n**Voice :** {voice}",
 			"footer": "Utilisez {prefix}help <command> pour plus d'infos sur une commande"
-		},"botinfo": {
+		},
+		"botinfo": {
 			"description": "Information about the bot",
 			"content": "Bot Information:\n- **Operating System**: {osInfo}\n- **Uptime**: {osUptime}\n- **Hostname**: {osHostname}\n- **CPU Architecture**: {cpuInfo}\n- **CPU Usage**: {cpuUsed}%\n- **Memory Usage**: {memUsed}MB / {memTotal}GB\n- **Node Version**: {nodeVersion}\n- **Discord Version**: {discordJsVersion}\n- **Connected to** {guilds} guilds, {channels} channels, and {users} users\n- **Total Commands**: {commands}"
 		},
@@ -288,9 +289,9 @@
 		},
 		"queue": {
 			"description": "Shows the current queue",
-			"now_playing": "Now playing: [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"now_playing": "Now playing: [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"live": "LIVE",
-			"track_info": "{index}. [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Requested By: <@{requester}> - Duration: `{duration}`",
 			"title": "Queue",
 			"page_info": "Page {index} of {total}"
 		},
@@ -335,7 +336,7 @@
 				"search_error": "There was an error while searching."
 			},
 			"messages": {
-				"added_to_queue": "Added [{{title}}]({{uri}}) to the queue."
+				"added_to_queue": "Added [{title}]({uri}) to the queue."
 			}
 		},
 		"seek": {
@@ -346,10 +347,10 @@
 			"errors": {
 				"invalid_format": "Invalid time format. Examples: seek 1m, seek 1h 30m",
 				"not_seekable": "This track is not seekable.",
-				"beyond_duration": "Cannot seek beyond the song duration of {{length}}."
+				"beyond_duration": "Cannot seek beyond the song duration of {length}."
 			},
 			"messages": {
-				"seeked_to": "Seeked to {{duration}}"
+				"seeked_to": "Seeked to {duration}"
 			}
 		},
 		"shuffle": {
@@ -361,7 +362,7 @@
 		"skip": {
 			"description": "Skips the current song",
 			"messages": {
-				"skipped": "Skipped [{{title}}]({{uri}})."
+				"skipped": "Skipped [{title}]({uri})."
 			}
 		},
 		"skipto": {
@@ -373,7 +374,7 @@
 				"invalid_number": "Please provide a valid number."
 			},
 			"messages": {
-				"skipped_to": "Skipped to song number {{number}}."
+				"skipped_to": "Skipped to song number {number}."
 			}
 		},
 		"stop": {
