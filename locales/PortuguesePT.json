@@ -481,6 +481,17 @@
 				"playlist_stolen": "Roubou com sucesso a lista de reprodução `{playlist}` de {user}.",
 				"error_occurred": "Ocorreu um erro ao roubar a lista de reprodução."
 			}
+		},
+		"language": {
+			"description": "Define a língua do bot",
+			"invalid_language": "Por favor, forneça uma língua válida. Exemplo: `EnglishUS` para inglês (Estados Unidos)\n\nPode encontrar a lista de línguas suportadas [aqui](https://discord.com/developers/docs/reference#locales)\n\n**Línguas disponíveis:**\n{languages}",
+			"already_set": "A língua já está definida para `{language}`",
+			"set": "`✅` | A língua foi definida para `{language}`",
+			"options": {
+				"set": "Define a língua do bot",
+				"language": "A língua que deseja definir",
+				"reset": "Altera a língua de volta para a língua predefinida"
+			}
 		}
 	},
 	"buttons": {

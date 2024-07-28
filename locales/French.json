@@ -483,10 +483,14 @@
 			}
 		},
 		"language": {
-			"description": "cmd.language.description",
+			"description": "Définit la langue du bot",
+			"invalid_language": "Veuillez fournir une langue valide. Exemple : `EnglishUS` pour l'anglais (États-Unis)\n\nVous pouvez trouver la liste des langues prises en charge [ici](https://discord.com/developers/docs/reference#locales)\n\n**Langues disponibles:**\n{languages}",
+			"already_set": "La langue est déjà définie sur `{language}`",
+			"set": "`✅` | La langue a été définie sur `{language}`",
 			"options": {
-				"set": "cmd.language.options.set",
-				"reset": "cmd.language.options.reset"
+				"set": "Définit la langue du bot",
+				"language": "La langue que vous souhaitez définir",
+				"reset": "Change la langue par défaut"
 			}
 		}
 	},

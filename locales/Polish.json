@@ -483,10 +483,14 @@
 			}
 		},
 		"language": {
-			"description": "cmd.language.description",
+			"description": "Ustaw język dla bota",
+			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla angielskiego (Stany Zjednoczone)\n\nMożesz znaleźć listę obsługiwanych języków [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
+			"already_set": "Język jest już ustawiony na `{language}`",
+			"set": "`✅` | Język został ustawiony na `{language}`",
 			"options": {
-				"set": "cmd.language.options.set",
-				"reset": "cmd.language.options.reset"
+				"set": "Ustaw język dla bota",
+				"language": "Język, który chcesz ustawić",
+				"reset": "Zmień język z powrotem na domyślny"
 			}
 		}
 	},
