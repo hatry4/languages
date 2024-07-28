@@ -1,5 +1,16 @@
 {
 	"cmd": {
+		"247": {
+			"description": "Configura el bot para que permanezca en el canal de voz",
+			"errors": {
+				"not_in_voice": "Debes estar en un canal de voz para usar este comando.",
+				"generic": "Se produjo un error al intentar ejecutar este comando."
+			},
+			"messages": {
+				"disabled": "`✅` | El modo 24/7 se ha `DESACTIVADO`",
+				"enabled": "`✅` | El modo 24/7 se ha `ACTIVADO`. \n**El bot no dejará el canal de voz incluso si no hay nadie en el canal de voz.**"
+			}
+		},
 		"ping": {
 			"description": "Muestra el ping del bot.",
 			"content": "Poniendo a prueba...",
@@ -38,17 +49,6 @@
 				"repository": "Repositorio",
 				"support": "Soporte",
 				"description": "Realmente quería hacer su primer proyecto de código abierto para obtener más experiencia en programación. En este proyecto, se desafió a sí mismo a hacer un proyecto con menos errores. ¡Espero que disfrutes usando LavaMusic!"
-			}
-		},
-		"247": {
-			"description": "Configura el bot para que permanezca en el canal de voz",
-			"errors": {
-				"not_in_voice": "Debes estar en un canal de voz para usar este comando.",
-				"generic": "Se produjo un error al intentar ejecutar este comando."
-			},
-			"messages": {
-				"disabled": "`✅` | El modo 24/7 se ha `DESACTIVADO`",
-				"enabled": "`✅` | El modo 24/7 se ha `ACTIVADO`. \n**El bot no dejará el canal de voz incluso si no hay nadie en el canal de voz.**"
 			}
 		},
 		"dj": {
@@ -480,6 +480,13 @@
 				"playlist_not_exist": "Esa lista de reproducción no existe para el usuario mencionado.",
 				"playlist_stolen": "Se ha robado correctamente la lista de reproducción `{playlist}` de {user}.",
 				"error_occurred": "Se ha producido un error al robar la lista de reproducción."
+			}
+		},
+		"language": {
+			"description": "cmd.language.description",
+			"options": {
+				"set": "cmd.language.options.set",
+				"reset": "cmd.language.options.reset"
 			}
 		}
 	},

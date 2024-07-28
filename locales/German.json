@@ -1,5 +1,16 @@
 {
 	"cmd": {
+		"247": {
+			"description": "Lege den Bot so fest, dass er im Sprachkanal bleibt",
+			"errors": {
+				"not_in_voice": "Du musst in einem Sprachkanal sein, um diesen Befehl zu verwenden.",
+				"generic": "Ein Fehler ist aufgetreten, als versucht wurde, diesen Befehl auszuführen."
+			},
+			"messages": {
+				"disabled": "`✅` | 24/7-Modus wurde `DEAKTIVIERT`",
+				"enabled": "`✅` | 24/7-Modus wurde `AKTIVIERT`. \n**Der Bot verlässt den Sprachkanal nicht, auch wenn sich keine Personen im Sprachkanal befinden.**"
+			}
+		},
 		"ping": {
 			"description": "Zeigt den Ping des Bots an.",
 			"content": "Ping...",
@@ -38,17 +49,6 @@
 				"repository": "Repository",
 				"support": "Support",
 				"description": "Er wollte unbedingt sein erstes Open-Source-Projekt überhaupt für mehr Programmiererfahrung erstellen. In diesem Projekt wurde er herausgefordert, ein Projekt mit weniger Bugs zu erstellen. Ich hoffe, du hast Spaß beim Verwenden von LavaMusic!"
-			}
-		},
-		"247": {
-			"description": "Lege den Bot so fest, dass er im Sprachkanal bleibt",
-			"errors": {
-				"not_in_voice": "Du musst in einem Sprachkanal sein, um diesen Befehl zu verwenden.",
-				"generic": "Ein Fehler ist aufgetreten, als versucht wurde, diesen Befehl auszuführen."
-			},
-			"messages": {
-				"disabled": "`✅` | 24/7-Modus wurde `DEAKTIVIERT`",
-				"enabled": "`✅` | 24/7-Modus wurde `AKTIVIERT`. \n**Der Bot verlässt den Sprachkanal nicht, auch wenn sich keine Personen im Sprachkanal befinden.**"
 			}
 		},
 		"dj": {
@@ -109,7 +109,6 @@
 				"info": "Zeigt den Song-Anforderungskanal an"
 			}
 		},
-
 		"8d": {
 			"description": "8d-Filter ein-/ausschalten",
 			"messages": {
@@ -213,7 +212,6 @@
 				"disabled": "`✅` | Vibrato-Filter wurde `DEAKTIVIERT`."
 			}
 		},
-
 		"autoplay": {
 			"description": "Schaltet Autoplay um",
 			"messages": {
@@ -397,7 +395,6 @@
 				"set": "Lautstärke auf {volume} gesetzt"
 			}
 		},
-
 		"addsong": {
 			"description": "Füge einen Song zur Playlist hinzu",
 			"options": {
@@ -484,6 +481,13 @@
 				"playlist_stolen": "Playlist `{playlist}` erfolgreich von {user} gestohlen.",
 				"error_occurred": "Ein Fehler ist beim Stehlen der Playlist aufgetreten."
 			}
+		},
+		"language": {
+			"description": "cmd.language.description",
+			"options": {
+				"set": "cmd.language.options.set",
+				"reset": "cmd.language.options.reset"
+			}
 		}
 	},
 	"buttons": {
@@ -560,7 +564,6 @@
 			"cooldown": "Bitte warte {time} weitere Sekunde(n), bevor du den Befehl `{command}` erneut verwendest.",
 			"no_mention_everyone": "Du kannst diesen Befehl nicht mit @everyone oder @here verwenden.",
 			"error": "Ein Fehler ist aufgetreten: `{error}`",
-
 			"no_voice_channel_queue": "Du bist nicht mit einem Sprachkanal verbunden, um Songs in die Warteschlange zu stellen.",
 			"no_permission_connect_speak": "Ich habe nicht genügend Berechtigungen, um mich in <#{channel}> zu verbinden/sprechen.",
 			"different_voice_channel_queue": "Du bist nicht mit <#{channel}> verbunden, um Songs in die Warteschlange zu stellen."

@@ -1,5 +1,16 @@
 {
 	"cmd": {
+		"247": {
+			"description": "Set the bot to stay in the voice channel",
+			"errors": {
+				"not_in_voice": "You need to be in a voice channel to use this command.",
+				"generic": "An error occurred while trying to execute this command."
+			},
+			"messages": {
+				"disabled": "**24/7 mode has been disabled**",
+				"enabled": "**24/7 mode has been `ENABLED`. \nThe bot will not leave the voice channel even if there are no people in the voice channel.**"
+			}
+		},
 		"ping": {
 			"description": "봇의 핑을 보여줘요.",
 			"content": "핑...",
@@ -38,17 +49,6 @@
 				"repository": "Repository",
 				"support": "Support",
 				"description": "He really wanted to make his first open source project ever for more coding experience. In this project, he was challenged to make a project with fewer bugs. Hope you enjoy using LavaMusic!"
-			}
-		},
-		"247": {
-			"description": "Set the bot to stay in the voice channel",
-			"errors": {
-				"not_in_voice": "You need to be in a voice channel to use this command.",
-				"generic": "An error occurred while trying to execute this command."
-			},
-			"messages": {
-				"disabled": "**24/7 mode has been disabled**",
-				"enabled": "**24/7 mode has been `ENABLED`. \nThe bot will not leave the voice channel even if there are no people in the voice channel.**"
 			}
 		},
 		"dj": {
@@ -480,6 +480,13 @@
 				"playlist_not_exist": "That playlist doesn't exist for the mentioned user.",
 				"playlist_stolen": "Successfully stole the playlist `{playlist}` from {user}.",
 				"error_occurred": "An error occurred while stealing the playlist."
+			}
+		},
+		"language": {
+			"description": "cmd.language.description",
+			"options": {
+				"set": "cmd.language.options.set",
+				"reset": "cmd.language.options.reset"
 			}
 		}
 	},

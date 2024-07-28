@@ -1,5 +1,16 @@
 {
 	"cmd": {
+		"247": {
+			"description": "Ustaw bota, aby pozostał na kanale głosowym",
+			"errors": {
+				"not_in_voice": "Musisz być na kanale głosowym, aby użyć tego polecenia.",
+				"generic": "Wystąpił błąd podczas próby wykonania tego polecenia."
+			},
+			"messages": {
+				"disabled": "`✅` | Tryb 24/7 został `WYŁĄCZONY`",
+				"enabled": "`✅` | Tryb 24/7 został `WŁĄCZONY`. \n**Bot nie opuści kanału głosowego, nawet jeśli nie będzie na nim żadnych użytkowników.**"
+			}
+		},
 		"ping": {
 			"description": "Pokazuje ping bota.",
 			"content": "Pinguję...",
@@ -38,17 +49,6 @@
 				"repository": "Repozytorium",
 				"support": "Pomoc",
 				"description": "Naprawdę chciał stworzyć swój pierwszy projekt open source, aby zdobyć więcej doświadczenia w programowaniu. W tym projekcie został postawiony przed wyzwaniem stworzenia projektu z mniejszą liczbą błędów. Mam nadzieję, że korzystanie z LavaMusic sprawia Ci przyjemność!"
-			}
-		},
-		"247": {
-			"description": "Ustaw bota, aby pozostał na kanale głosowym",
-			"errors": {
-				"not_in_voice": "Musisz być na kanale głosowym, aby użyć tego polecenia.",
-				"generic": "Wystąpił błąd podczas próby wykonania tego polecenia."
-			},
-			"messages": {
-				"disabled": "`✅` | Tryb 24/7 został `WYŁĄCZONY`",
-				"enabled": "`✅` | Tryb 24/7 został `WŁĄCZONY`. \n**Bot nie opuści kanału głosowego, nawet jeśli nie będzie na nim żadnych użytkowników.**"
 			}
 		},
 		"dj": {
@@ -480,6 +480,13 @@
 				"playlist_not_exist": "Ta lista odtwarzania nie istnieje dla wspomnianego użytkownika.",
 				"playlist_stolen": "Pomyślnie skradziono listę odtwarzania `{playlist}` od {user}.",
 				"error_occurred": "Wystąpił błąd podczas kradzieży listy odtwarzania."
+			}
+		},
+		"language": {
+			"description": "cmd.language.description",
+			"options": {
+				"set": "cmd.language.options.set",
+				"reset": "cmd.language.options.reset"
 			}
 		}
 	},

@@ -1,5 +1,16 @@
 {
 	"cmd": {
+		"247": {
+			"description": "Configure le bot pour qu'il reste dans le canal vocal",
+			"errors": {
+				"not_in_voice": "Vous devez être dans un canal vocal pour utiliser cette commande.",
+				"generic": "Une erreur s'est produite lors de l'exécution de cette commande."
+			},
+			"messages": {
+				"disabled": "`✅` | Le mode 24/7 a été `DÉSACTIVÉ`",
+				"enabled": "`✅` | Le mode 24/7 a été `ACTIVÉ`. \n**Le bot ne quittera pas le canal vocal même s'il n'y a personne dans le canal vocal.**"
+			}
+		},
 		"ping": {
 			"description": "Affiche le ping du bot.",
 			"content": "Ping en cours...",
@@ -38,17 +49,6 @@
 				"repository": "Dépôt",
 				"support": "Assistance",
 				"description": "Il voulait vraiment faire son premier projet open source pour plus d'expérience en codage. Dans ce projet, il a été mis au défi de faire un projet avec moins de bugs. J'espère que vous apprécierez l'utilisation de LavaMusic !"
-			}
-		},
-		"247": {
-			"description": "Configure le bot pour qu'il reste dans le canal vocal",
-			"errors": {
-				"not_in_voice": "Vous devez être dans un canal vocal pour utiliser cette commande.",
-				"generic": "Une erreur s'est produite lors de l'exécution de cette commande."
-			},
-			"messages": {
-				"disabled": "`✅` | Le mode 24/7 a été `DÉSACTIVÉ`",
-				"enabled": "`✅` | Le mode 24/7 a été `ACTIVÉ`. \n**Le bot ne quittera pas le canal vocal même s'il n'y a personne dans le canal vocal.**"
 			}
 		},
 		"dj": {
@@ -109,7 +109,6 @@
 				"info": "Affiche le canal de demande de chanson"
 			}
 		},
-
 		"8d": {
 			"description": "Activer/désactiver le filtre 8d",
 			"messages": {
@@ -213,7 +212,6 @@
 				"disabled": "`✅` | Le filtre de vibrato a été `DÉSACTIVÉ`."
 			}
 		},
-
 		"autoplay": {
 			"description": "Active/désactive la lecture automatique",
 			"messages": {
@@ -397,7 +395,6 @@
 				"set": "Volume défini sur {volume}"
 			}
 		},
-
 		"addsong": {
 			"description": "Ajoute une chanson à la playlist",
 			"options": {
@@ -484,6 +481,13 @@
 				"playlist_stolen": "Vole avec succès la playlist `{playlist}` à {user}.",
 				"error_occurred": "Une erreur s'est produite lors du vol de la playlist."
 			}
+		},
+		"language": {
+			"description": "cmd.language.description",
+			"options": {
+				"set": "cmd.language.options.set",
+				"reset": "cmd.language.options.reset"
+			}
 		}
 	},
 	"buttons": {
@@ -560,7 +564,6 @@
 			"cooldown": "Veuillez attendre {time} seconde(s) de plus avant de réutiliser la commande `{command}`.",
 			"no_mention_everyone": "Vous ne pouvez pas utiliser cette commande avec tout le monde ou ici.",
 			"error": "Une erreur s'est produite : `{error}`",
-
 			"no_voice_channel_queue": "Vous n'êtes pas connecté à un canal vocal pour mettre des chansons en file d'attente.",
 			"no_permission_connect_speak": "Je n'ai pas suffisamment de permissions pour me connecter/parler dans <#{channel}>.",
 			"different_voice_channel_queue": "Vous n'êtes pas connecté à <#{channel}> pour mettre des chansons en file d'attente."
