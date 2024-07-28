@@ -1,10 +1,10 @@
 {
 	"cmd": {
 		"247": {
-			"description": "Ustaw bota, aby pozostał na kanale głosowym",
+			"description": "Ustaw, aby bot pozostał na kanale głosowym",
 			"errors": {
-				"not_in_voice": "Musisz być na kanale głosowym, aby użyć tego polecenia.",
-				"generic": "Wystąpił błąd podczas próby wykonania tego polecenia."
+				"not_in_voice": "Musisz być na kanale głosowym, aby użyć tej komendy.",
+				"generic": "Wystąpił błąd podczas próby wykonania tej komendy."
 			},
 			"messages": {
 				"disabled": "`✅` | Tryb 24/7 został `WYŁĄCZONY`",
@@ -16,7 +16,7 @@
 			"content": "Pinguję...",
 			"bot_latency": "Opóźnienie bota",
 			"api_latency": "Opóźnienie API",
-			"requested_by": "Zapytał {author}"
+			"requested_by": "Żądany przez {author}"
 		},
 		"lavalink": {
 			"description": "Pokazuje aktualne statystyki Lavalink.",
@@ -24,23 +24,23 @@
 			"content": "Odtwarzacze: {players}\nGrający Odtwarzacze: {playingPlayers}\nCzas działania: {uptime}\nRdzenie: {cores} Rdzeń(rdzenie)\nZużycie pamięci: {used} / {reservable}\nObciążenie systemu: {systemLoad}%\nObciążenie Lavalink: {lavalinkLoad}%"
 		},
 		"invite": {
-			"description": "Pobierz link do zaproszenia bota.",
-			"content": "Możesz mnie zaprosić, klikając przycisk poniżej. Jakiekolwiek błędy lub awarie? Dołącz do serwera pomocy!"
+			"description": "Uzyskaj link do zaproszenia bota.",
+			"content": "Możesz mnie zaprosić, klikając przycisk poniżej. Jakiekolwiek błędy lub awarie? Dołącz do serwera wsparcia!"
 		},
 		"help": {
 			"description": "Pokazuje menu pomocy.",
 			"options": {
-				"command": "Polecenie, o które chcesz uzyskać informacje"
+				"command": "Komenda, o której chcesz uzyskać więcej informacji"
 			},
-			"content": "Cześć! Jestem {bot}, botem muzycznym stworzonym z użyciem [Lavamusic](https://github.com/appujet/lavamusic) i Discord. Możesz użyć `{prefix}help <command>`, aby uzyskać więcej informacji na temat polecenia.",
+			"content": "Cześć! Jestem {bot}, botem muzycznym stworzonym przy użyciu [Lavamusic](https://github.com/appujet/lavamusic) i Discord. Możesz użyć komendy `{prefix}help <command>`, aby uzyskać więcej informacji o danej komendzie.",
 			"title": "Menu Pomocy",
-			"not_found": "Polecenie `{cmdName}` nie istnieje.",
-			"help_cmd": "**Opis:** {description}\n**Użycie:** {usage}\n**Przykłady:** {examples}\n**Alias:** {aliases}\n**Kategoria:** {category}\n**Odnowienie:** {cooldown} sekund\n**Uprawnienia:** {premUser}\n**Uprawnienia bota:** {premBot}\n**Tylko dla deweloperów:** {dev}\n**Polecenie Slash:** {slash}\n**Argumenty:** {args}\n**Odtwarzacz:** {player}\n**DJ:** {dj}\n**Uprawnienia DJ:** {djPerm}\n**Głos:** {voice}",
-			"footer": "Użyj {prefix}help <command>, aby uzyskać więcej informacji na temat polecenia"
+			"not_found": "Komenda`{cmdName}` nie istnieje.",
+			"help_cmd": "**Opis:** {description}\n**Użycie:** {usage}\n**Przykłady:** {examples}\n**Alias:** {aliases}\n**Kategoria:** {category}\n**Odnowienie:** {cooldown} sekund\n**Uprawnienia:** {premUser}\n**Uprawnienia bota:** {premBot}\n**Tylko dla deweloperów:** {dev}\n**Komenda Slash:** {slash}\n**Argumenty:** {args}\n**Odtwarzacz:** {player}\n**DJ:** {dj}\n**Uprawnienia DJ:** {djPerm}\n**Głos:** {voice}",
+			"footer": "Użyj komendy {prefix}help <command>, aby uzyskać więcej informacji o danej komendzie."
 		},
 		"botinfo": {
 			"description": "Informacje o bocie",
-			"content": "Informacje o bocie:\n- **System operacyjny**: {osInfo}\n- **Czas działania**: {osUptime}\n- **Nazwa hosta**: {osHostname}\n- **Architektura procesora**: {cpuInfo}\n- **Wykorzystanie procesora**: {cpuUsed}%\n- **Zużycie pamięci**: {memUsed}MB / {memTotal}GB\n- **Wersja Node**: {nodeVersion}\n- **Wersja Discord**: {discordJsVersion}\n- **Połączony z** {guilds} serwerami, {channels} kanałami i {users} użytkownikami\n- **Łącznie poleceń**: {commands}"
+			"content": "Informacje o bocie:\n- **System operacyjny**: {osInfo}\n- **Czas działania**: {osUptime}\n- **Nazwa hosta**: {osHostname}\n- **Architektura procesora**: {cpuInfo}\n- **Wykorzystanie procesora**: {cpuUsed}%\n- **Zużycie pamięci**: {memUsed}MB / {memTotal}GB\n- **Wersja Node**: {nodeVersion}\n- **Wersja Discord**: {discordJsVersion}\n- **Połączony z** {guilds} serwerami, {channels} kanałami i {users} użytkownikami\n- **Łącznie komend**: {commands}"
 		},
 		"about": {
 			"description": "Pokazuje informacje o bocie",
@@ -48,32 +48,32 @@
 				"creator": "Twórca",
 				"repository": "Repozytorium",
 				"support": "Pomoc",
-				"description": "Naprawdę chciał stworzyć swój pierwszy projekt open source, aby zdobyć więcej doświadczenia w programowaniu. W tym projekcie został postawiony przed wyzwaniem stworzenia projektu z mniejszą liczbą błędów. Mam nadzieję, że korzystanie z LavaMusic sprawia Ci przyjemność!"
+				"description": "Chciałem stworzyć swój pierwszy projekt open source, aby zdobyć więcej doświadczenia w programowaniu. W tym projekcie zostałem postawiony przed wyzwaniem stworzenia projektu z mniejszą liczbą błędów. Mam nadzieję, że korzystanie z LavaMusic sprawia Ci przyjemność!"
 			}
 		},
 		"dj": {
-			"description": "Zarządzaj trybem DJ i powiązanymi rolami",
+			"description": "Zarządzaj trybem DJ i powiązanymi z nim rolami",
 			"errors": {
 				"provide_role": "Podaj rolę.",
 				"no_roles": "Rola DJ jest pusta.",
-				"invalid_subcommand": "Podaj prawidłowe podpolecenie."
+				"invalid_subcommand": "Podaj prawidłową subkomende."
 			},
 			"messages": {
 				"role_exists": "Rola DJ <@&{roleId}> została już dodana.",
-				"role_added": "Rola DJ <@&{roleId}> została dodana.",
+				"role_added": "Rola DJ <@&{roleId}> została pomyślnie dodana.",
 				"role_not_found": "Rola DJ <@&{roleId}> nie została dodana.",
-				"role_removed": "Rola DJ <@&{roleId}> została usunięta.",
-				"all_roles_cleared": "Wszystkie role DJ zostały usunięte.",
+				"role_removed": "Rola DJ <@&{roleId}> została pomyślnie usunięta.",
+				"all_roles_cleared": "Wszystkie role DJ zostały pomyślnie usunięte.",
 				"toggle": "Tryb DJ został przełączony na {status}."
 			},
 			"options": {
 				"add": "Rola DJ, którą chcesz dodać",
 				"remove": "Rola DJ, którą chcesz usunąć",
 				"clear": "Czyści wszystkie role DJ",
-				"toggle": "Przełącza rolę DJ",
+				"toggle": "Włącza/Wyłącza rolę DJ",
 				"role": "Rola DJ"
 			},
-			"subcommands": "Podpolecenia"
+			"subcommands": "Subkomenda"
 		},
 		"prefix": {
 			"description": "Pokazuje lub ustawia prefiks bota",
@@ -94,19 +94,19 @@
 		"setup": {
 			"description": "Konfiguruje bota",
 			"errors": {
-				"channel_exists": "Kanał żądania utworu już istnieje.",
-				"channel_not_exists": "Kanał żądania utworu nie istnieje.",
-				"channel_delete_fail": "Kanał żądania utworu został usunięty. Jeśli kanał nie zostanie usunięty normalnie, usuń go samodzielnie."
+				"channel_exists": "Kanał żądanań utworu już istnieje.",
+				"channel_not_exists": "Kanał żądanań utworu nie istnieje.",
+				"channel_delete_fail": "Kanał żądanań utworu został usunięty. Jeśli kanał nie zostanie usunięty samoistnie, usuń go samodzielnie."
 			},
 			"messages": {
-				"channel_created": "Kanał żądania utworu został utworzony w <#{channelId}>.",
-				"channel_deleted": "Kanał żądania utworu został usunięty.",
-				"channel_info": "Kanał żądania utworu to <#{channelId}>."
+				"channel_created": "Kanał żądanań utworu został utworzony i jest nim <#{channelId}>.",
+				"channel_deleted": "Kanał żądanań utworu został pomyślnie usunięty.",
+				"channel_info": "Kanałem żądanań utworu jest <#{channelId}>."
 			},
 			"options": {
-				"create": "Tworzy kanał żądania utworu",
-				"delete": "Usuwa kanał żądania utworu",
-				"info": "Pokazuje kanał żądania utworu"
+				"create": "Tworzy kanał żądanań utworu",
+				"delete": "Usuwa kanał żądanań utworu",
+				"info": "Pokazuje kanał żądanań utworu"
 			}
 		},
 		"8d": {
@@ -138,10 +138,10 @@
 			}
 		},
 		"lowpass": {
-			"description": "Włącz/wyłącz filtr dolnoprzepustowy",
+			"description": "Włącz/wyłącz filtr lowpass",
 			"messages": {
-				"filter_enabled": "`✅` | Filtr dolnoprzepustowy został `WŁĄCZONY`.",
-				"filter_disabled": "`✅` | Filtr dolnoprzepustowy został `WYŁĄCZONY`."
+				"filter_enabled": "`✅` | Filtr lowpass został `WŁĄCZONY`.",
+				"filter_disabled": "`✅` | Filtr lowpass został `WYŁĄCZONY`."
 			}
 		},
 		"nightcore": {
@@ -172,20 +172,20 @@
 				"invalid_number": "Podaj prawidłową liczbę między 0,5 a 5."
 			},
 			"messages": {
-				"rate_set": "`✅` | Tempo zostało ustawione na **{rate}**."
+				"rate_set": "`✅` | Tempo utworu zostało ustawione na **{rate}**."
 			}
 		},
 		"reset": {
 			"description": "Resetuje aktywne filtry",
 			"messages": {
-				"filters_reset": "`✅` | Filtry zostały zresetowane."
+				"filters_reset": "`✅` | Aktywne filtry zostały zresetowane."
 			}
 		},
 		"rotation": {
-			"description": "Włącz/wyłącz filtr obrotu",
+			"description": "Włącz/wyłącz filtr rotation",
 			"messages": {
-				"enabled": "`✅` | Filtr obrotu został `WŁĄCZONY`.",
-				"disabled": "`✅` | Filtr obrotu został `WYŁĄCZONY`."
+				"enabled": "`✅` | Filtr rotation został `WŁĄCZONY`.",
+				"disabled": "`✅` | Filtr rotation został `WYŁĄCZONY`."
 			}
 		},
 		"speed": {
@@ -213,7 +213,7 @@
 			}
 		},
 		"autoplay": {
-			"description": "Przełącza automatyczne odtwarzanie",
+			"description": "Włącz/wyłącz automatyczne odtwarzanie",
 			"messages": {
 				"enabled": "`✅` | Automatyczne odtwarzanie zostało `WŁĄCZONE`.",
 				"disabled": "`✅` | Automatyczne odtwarzanie zostało `WYŁĄCZONE`."
@@ -222,19 +222,19 @@
 		"clearqueue": {
 			"description": "Czyści kolejkę",
 			"messages": {
-				"cleared": "Kolejka została oczyszczona."
+				"cleared": "Kolejka została wyczyszczona."
 			}
 		},
 		"grab": {
-			"description": "Pobiera aktualnie odtwarzany utwór na twoją DM",
-			"content": "**Czas trwania:** {length}\n**Zapytał:** {requester}\n**Link:** [Kliknij tutaj]({uri})",
-			"check_dm": "Sprawdź swoją DM.",
-			"dm_failed": "Nie mogłem wysłać ci DM."
+			"description": "Wysyła aktualnie odtwarzany utwór na DM",
+			"content": "**Czas trwania:** {length}\n**Żądany przez:** {requester}\n**Link:** [Kliknij tutaj]({uri})",
+			"check_dm": "Sprawdź swoje DM.",
+			"dm_failed": "Nie mogłem wysłać ci wiadomości na DM."
 		},
 		"join": {
 			"description": "Dołącza do kanału głosowego",
 			"already_connected": "Jestem już połączony z <#{channelId}>.",
-			"no_voice_channel": "Musisz być na kanale głosowym, aby użyć tego polecenia.",
+			"no_voice_channel": "Musisz być na kanale głosowym, aby użyć tej komendy.",
 			"joined": "Pomyślnie dołączono do <#{channelId}>."
 		},
 		"leave": {
@@ -243,19 +243,19 @@
 			"not_in_channel": "Nie jestem na żadnym kanale głosowym."
 		},
 		"loop": {
-			"description": "Pętla bieżącego utworu lub kolejki",
-			"looping_song": "**Pętla utworu.**",
-			"looping_queue": "**Pętla kolejki.**",
-			"looping_off": "**Pętla jest teraz wyłączona.**"
+			"description": "Zapętl bieżący utwor lub kolejkę",
+			"looping_song": "**Zapętl utwor.**",
+			"looping_queue": "**Zapętl kolejkę.**",
+			"looping_off": "**Zapętlenie jest teraz wyłączone.**"
 		},
 		"nowplaying": {
 			"description": "Pokazuje aktualnie odtwarzany utwór",
 			"now_playing": "Teraz odtwarzany",
-			"track_info": "[{title}]({uri}) - Zapytał: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Żądany przez: {requester}\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Wstrzymuje aktualnie odtwarzany utwór",
-			"successfully_paused": "Pomyślnie wstrzymano utwór."
+			"successfully_paused": "Pomyślnie wstrzymano bieżący utwór."
 		},
 		"play": {
 			"description": "Odtwarza utwór z YouTube, Spotify lub http",
@@ -266,10 +266,10 @@
 			"errors": {
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
-				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość to {maxPlaylistSize} utworów."
+				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
+				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
 			},
-			"added_to_queue": "Dodano [{title}]({uri}) do kolejki.",
+			"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki.",
 			"added_playlist_to_queue": "Dodano {length} utworów do kolejki."
 		},
 		"playnext": {
@@ -281,18 +281,18 @@
 			"errors": {
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
-				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość to {maxPlaylistSize} utworów."
+				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
+				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
 			},
-			"added_to_play_next": "Dodano [{title}]({uri}) do odtworzenia jako następny w kolejce.",
+			"added_to_play_next": "Dodano utwór [{title}]({uri}) do odtworzenia jako następny w kolejce.",
 			"added_playlist_to_play_next": "Dodano {length} utworów do odtworzenia jako następne w kolejce."
 		},
 		"queue": {
 			"description": "Pokazuje aktualną kolejkę",
-			"now_playing": "Teraz odtwarzany: [{title}]({uri}) - Zapytał: {requester} - Czas trwania: {duration}",
+			"now_playing": "Teraz odtwarzany: [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
 			"live": "NA ŻYWO",
-			"track_info": "{index}. [{title}]({uri}) - Zapytał: {requester} - Czas trwania: {duration}",
-			"title": "Kolejka",
+			"track_info": "{index}. [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"title": "Bieżąca kolejka",
 			"page_info": "Strona {index} z {total}"
 		},
 		"remove": {
@@ -311,7 +311,7 @@
 		"replay": {
 			"description": "Odtwarza ponownie bieżący utwór",
 			"errors": {
-				"not_seekable": "Nie można odtworzyć ponownie tego utworu, ponieważ nie można go przeszukiwać."
+				"not_seekable": "Nie można odtworzyć ponownie tego utworu, ponieważ nie można go wyszukać."
 			},
 			"messages": {
 				"replaying": "Odtwarzam ponownie bieżący utwór."
@@ -323,34 +323,34 @@
 				"not_paused": "Odtwarzacz nie jest wstrzymany."
 			},
 			"messages": {
-				"resumed": "Wznówiono odtwarzacz."
+				"resumed": "Wznowiono utwór"
 			}
 		},
 		"search": {
-			"description": "Szuka utworu",
+			"description": "Wyszukaj utwór",
 			"options": {
 				"song": "Utwór, którego szukasz"
 			},
 			"errors": {
 				"no_results": "Nie znaleziono żadnych rezultatów.",
-				"search_error": "Wystąpił błąd podczas wyszukiwania."
+				"search_error": "Wystąpił błąd podczas wyszukiwania utworu."
 			},
 			"messages": {
-				"added_to_queue": "Dodano [{{title}}]({{uri}}) do kolejki."
+				"added_to_queue": "Dodano utwór [{{title}}]({{uri}}) do kolejki."
 			}
 		},
 		"seek": {
-			"description": "Przesuwa się do określonego momentu w utworze",
+			"description": "Przewiń utwór do określonego czasu",
 			"options": {
-				"duration": "Czas trwania, do którego chcesz się przesunąć"
+				"duration": "Czas trwania, do którego chcesz przewinąć utwór"
 			},
 			"errors": {
 				"invalid_format": "Nieprawidłowy format czasu. Przykłady: seek 1m, seek 1h 30m",
-				"not_seekable": "Ten utwór nie jest przeszukiwalny.",
-				"beyond_duration": "Nie można przesuwać się poza czas trwania utworu {length}."
+				"not_seekable": "Ten utwór jest nieprzewijalny.",
+				"beyond_duration": "Nie można przewinąć utworu poza czas jego trwania {length}."
 			},
 			"messages": {
-				"seeked_to": "Przesunięto do {duration}"
+				"seeked_to": "Przewinięto utwór do {duration}"
 			}
 		},
 		"shuffle": {
@@ -362,25 +362,25 @@
 		"skip": {
 			"description": "Pomija aktualnie odtwarzany utwór",
 			"messages": {
-				"skipped": "Pominięto [{title}]({uri})."
+				"skipped": "Pominięto utwór [{title}]({uri})."
 			}
 		},
 		"skipto": {
-			"description": "Przeskakuje do konkretnego utworu w kolejce",
+			"description": "Pomija do określonego utworu w kolejce",
 			"options": {
-				"number": "Numer utworu, do którego chcesz przeskoczyć"
+				"number": "Numer utworu, do którego chcesz pominąć"
 			},
 			"errors": {
-				"invalid_number": "Podaj prawidłowy numer."
+				"invalid_number": "Podaj prawidłowy numer utworu."
 			},
 			"messages": {
-				"skipped_to": "Przeskoczone do utworu o numerze {number}."
+				"skipped_to": "Pominięto do utworu o numerze {number}."
 			}
 		},
 		"stop": {
 			"description": "Zatrzymuje muzykę i czyści kolejkę",
 			"messages": {
-				"stopped": "Zatrzymano muzykę i oczyszczono kolejkę."
+				"stopped": "Zatrzymano muzykę i wyczyszczono kolejkę."
 			}
 		},
 		"volume": {
@@ -391,33 +391,33 @@
 			"messages": {
 				"invalid_number": "Podaj prawidłową liczbę.",
 				"too_low": "Głośność nie może być niższa niż 0.",
-				"too_high": "Głośność nie może być wyższa niż 200. Czy chcesz uszkodzić słuch lub głośniki? Hmmm, nie sądzę, żeby to był dobry pomysł.",
+				"too_high": "Głośność nie może być wyższa niż 200. Czy chcesz uszkodzić swój słuch lub głośniki? Hmmm, nie sądzę, żeby to był dobry pomysł.",
 				"set": "Ustawiono głośność na {volume}"
 			}
 		},
 		"addsong": {
-			"description": "Dodaje utwór do listy odtwarzania",
+			"description": "Dodaje utwór do playlisty",
 			"options": {
-				"playlist": "Lista odtwarzania, do której chcesz dodać",
+				"playlist": "Playlista, do której chcesz dodać utwór",
 				"song": "Utwór, który chcesz dodać"
 			},
 			"messages": {
-				"no_playlist": "Podaj listę odtwarzania",
-				"no_song": "Podaj utwór",
-				"playlist_not_found": "Ta lista odtwarzania nie istnieje",
+				"no_playlist": "Podaj nazwę playlisty",
+				"no_song": "Podaj link do utworu",
+				"playlist_not_found": "Ta playlista nie istnieje",
 				"no_songs_found": "Nie znaleziono żadnych utworów",
 				"added": "Dodano {count} utwór(ów) do {playlist}"
 			}
 		},
 		"create": {
-			"description": "Tworzy listę odtwarzania",
+			"description": "Tworzy playlistę",
 			"options": {
-				"name": "Nazwa listy odtwarzania"
+				"name": "Nazwa playlisty"
 			},
 			"messages": {
-				"name_too_long": "Nazwy list odtwarzania mogą mieć maksymalnie 50 znaków.",
-				"playlist_exists": "Lista odtwarzania o tej nazwie już istnieje. Użyj innej nazwy.",
-				"playlist_created": "Lista odtwarzania **{name}** została utworzona."
+				"name_too_long": "Nazwy playlist mogą mieć maksymalnie 50 znaków.",
+				"playlist_exists": "Playlista o tej nazwie już istnieje. Użyj innej nazwy.",
+				"playlist_created": "Playlista **{name}** została pomyślnie utworzona."
 			}
 		},
 		"delete": {
@@ -427,66 +427,66 @@
 			},
 			"messages": {
 				"playlist_not_found": "Ta lista odtwarzania nie istnieje.",
-				"playlist_deleted": "Usunięto listę odtwarzania **{playlistName}**."
+				"playlist_deleted": "Pomyślnie usunięto listę odtwarzania **{playlistName}**."
 			}
 		},
 		"list": {
-			"description": "Pobiera wszystkie listy odtwarzania dla użytkownika",
+			"description": "Wyświetla wszystkie playlisty użytkownika",
 			"options": {
-				"user": "Użytkownik, którego listy odtwarzania chcesz pobrać"
+				"user": "Użytkownik, którego playlisty chcesz wyświetlić"
 			},
 			"messages": {
-				"no_playlists": "Ten użytkownik nie ma żadnych list odtwarzania.",
-				"your": "Twoje",
-				"playlists_title": "Listy odtwarzania {username}",
-				"error": "Wystąpił błąd podczas pobierania list odtwarzania."
+				"no_playlists": "Ten użytkownik nie ma żadnych playlist.",
+				"your": "Twoje playlisty",
+				"playlists_title": "Playlisty użytkownika {username}",
+				"error": "Wystąpił błąd podczas wyświetlania playlist."
 			}
 		},
 		"load": {
-			"description": "Ładuje listę odtwarzania",
+			"description": "Ładuje playlistę",
 			"options": {
-				"playlist": "Lista odtwarzania, którą chcesz załadować"
+				"playlist": "Playlista, którą chcesz załadować"
 			},
 			"messages": {
-				"playlist_not_exist": "Ta lista odtwarzania nie istnieje.",
-				"playlist_empty": "Ta lista odtwarzania jest pusta.",
-				"playlist_loaded": "Załadowano `{name}` z `{count}` utworami."
+				"playlist_not_exist": "Ta playlista nie istnieje.",
+				"playlist_empty": "Ta playlista jest pusta.",
+				"playlist_loaded": "Załadowano playlistę `{name}` z `{count}` utworami."
 			}
 		},
 		"removesong": {
-			"description": "Usuwa utwór z listy odtwarzania",
+			"description": "Usuwa utwór z playlisty",
 			"options": {
-				"playlist": "Lista odtwarzania, z której chcesz usunąć",
+				"playlist": "Playlista, z której chcesz usunąć utwór",
 				"song": "Utwór, który chcesz usunąć"
 			},
 			"messages": {
-				"provide_playlist": "Podaj listę odtwarzania.",
-				"provide_song": "Podaj utwór.",
-				"playlist_not_exist": "Ta lista odtwarzania nie istnieje.",
+				"provide_playlist": "Podaj nazwę playlisty.",
+				"provide_song": "Podaj link do utworu.",
+				"playlist_not_exist": "Ta playlista nie istnieje.",
 				"song_not_found": "Nie znaleziono pasującego utworu.",
-				"song_removed": "Usunięto {song} z {playlist}.",
+				"song_removed": "Usunięto utwor {song} z {playlist}.",
 				"error_occurred": "Wystąpił błąd podczas usuwania utworu."
 			}
 		},
 		"steal": {
-			"description": "Kradnie listę odtwarzania od innego użytkownika i dodaje ją do swoich list odtwarzania",
+			"description": "Kradnie playlistę od innego użytkownika i dodaje ją do swoich playlist",
 			"options": {
-				"playlist": "Lista odtwarzania, którą chcesz ukraść",
-				"user": "Użytkownik, od którego chcesz ukraść listę odtwarzania"
+				"playlist": "Playlista, którą chcesz ukraść",
+				"user": "Użytkownik, od którego chcesz ukraść playlistę"
 			},
 			"messages": {
-				"provide_playlist": "Podaj nazwę listy odtwarzania.",
-				"provide_user": "Wspomnij użytkownika.",
-				"playlist_not_exist": "Ta lista odtwarzania nie istnieje dla wspomnianego użytkownika.",
-				"playlist_stolen": "Pomyślnie skradziono listę odtwarzania `{playlist}` od {user}.",
-				"error_occurred": "Wystąpił błąd podczas kradzieży listy odtwarzania."
+				"provide_playlist": "Podaj nazwę playlisty.",
+				"provide_user": "Wybierz użytkownika, od którego chcesz ukraść playlistę.",
+				"playlist_not_exist": "Ta playlista nie istnieje dla wspomnianego użytkownika.",
+				"playlist_stolen": "Pomyślnie skradziono playlistę `{playlist}` od {user}.",
+				"error_occurred": "Wystąpił błąd podczas kradzieży playlisty."
 			}
 		},
 		"language": {
 			"description": "Ustaw język dla bota",
-			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla angielskiego (Stany Zjednoczone)\n\nMożesz znaleźć listę obsługiwanych języków [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
-			"already_set": "Język jest już ustawiony na `{language}`",
-			"set": "`✅` | Język został ustawiony na `{language}`",
+			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla języka angielskiego (Stany Zjednoczone)\n\nLista obsługiwanych języków znajduje się [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
+			"already_set": "Język bota jest już ustawiony na `{language}`.",
+			"set": "`✅` | Język bota został pomyślnie ustawiony na `{language}`.",
 			"options": {
 				"set": "Ustaw język dla bota",
 				"language": "Język, który chcesz ustawić",
@@ -496,17 +496,17 @@
 	},
 	"buttons": {
 		"invite": "Zaproś",
-		"support": "Serwer pomocy",
+		"support": "Serwer wsparcia",
 		"previous": "Poprzedni",
 		"resume": "Wznów",
 		"stop": "Zatrzymaj",
 		"skip": "Pomiń",
-		"loop": "Pętla"
+		"loop": "Zapętl"
 	},
 	"player": {
 		"errors": {
 			"no_player": "Nie ma aktywnego odtwarzacza na tym serwerze.",
-			"no_channel": "Musisz być na kanale głosowym, aby użyć tego polecenia.",
+			"no_channel": "Musisz być na kanale głosowym, aby użyć tej komendy.",
 			"queue_empty": "Kolejka jest pusta.",
 			"no_previous": "Nie ma żadnych poprzednich utworów w kolejce.",
 			"no_song": "Nie ma żadnych utworów w kolejce.",
@@ -514,89 +514,89 @@
 		},
 		"trackStart": {
 			"now_playing": "Teraz odtwarzany",
-			"requested_by": "Zapytał {user}",
+			"requested_by": "Żądany przez {user}",
 			"duration": "Czas trwania",
 			"author": "Autor",
-			"not_connected_to_voice_channel": "Nie jesteś połączony z <#{channel}>, aby używać tych przycisków.",
-			"need_dj_role": "Musisz mieć rolę DJ, aby użyć tego polecenia.",
-			"previous_by": "Poprzedni przez {user}",
-			"no_previous_song": "Nie ma poprzedniego utworu.",
+			"not_connected_to_voice_channel": "Aby używać tych przycisków musisz być połączony z <#{channel}>.",
+			"need_dj_role": "Musisz mieć rolę DJ, aby użyć tej komendy.",
+			"previous_by": "Utwór ostatnio odtwarzany przez {user}",
+			"no_previous_song": "Nie ma żadnego poprzedniego utworu.",
 			"paused_by": "Wstrzymany przez {user}",
-			"resumed_by": "Wznówiony przez {user}",
+			"resumed_by": "Wznowiony przez {user}",
 			"skipped_by": "Pominięty przez {user}",
 			"no_more_songs_in_queue": "Nie ma więcej utworów w kolejce.",
-			"looping_by": "Pętla przez {user}",
-			"looping_queue_by": "Pętla kolejki przez {user}",
-			"looping_off_by": "Pętla wyłączona przez {user}"
+			"looping_by": "Zapętlony przez {user}",
+			"looping_queue_by": "Zapętlona kolejka przez {user}",
+			"looping_off_by": "Zapętlenie wyłączone przez {user}"
 		}
 	},
 	"event": {
 		"interaction": {
-			"setup_channel": "Nie możesz używać tego polecenia na kanale konfiguracji.",
+			"setup_channel": "Nie możesz używać tej komendy na kanale konfiguracji.",
 			"no_send_message": "Nie mam uprawnień **`SendMessage`** na `{guild}`\nkanale: {channel}.",
 			"no_embed_links": "Nie mam uprawnień **`EmbedLinks`**.",
-			"no_permission": "Nie mam wystarczających uprawnień, aby wykonać to polecenie.",
-			"no_user_permission": "Nie masz wystarczających uprawnień, aby użyć tego polecenia.",
-			"no_voice_channel": "Musisz być połączony z kanałem głosowym, aby użyć tego polecenia `{command}`.",
-			"no_connect_permission": "Nie mam uprawnień `CONNECT`, aby wykonać to polecenie `{command}`.",
-			"no_speak_permission": "Nie mam uprawnień `SPEAK`, aby wykonać to polecenie `{command}`.",
-			"no_request_to_speak": "Nie mam uprawnień `REQUEST TO SPEAK`, aby wykonać to polecenie `{command}`.",
-			"different_voice_channel": "Nie jesteś połączony z {channel}, aby użyć tego polecenia `{command}`.",
+			"no_permission": "Nie mam wystarczających uprawnień, aby wykonać tę komendę.",
+			"no_user_permission": "Nie masz wystarczających uprawnień, aby użyć tej komendy.",
+			"no_voice_channel": "Musisz być połączony z kanałem głosowym, aby użyć tej komendy `{command}`.",
+			"no_connect_permission": "Nie mam uprawnień `CONNECT`, aby wykonać tę komendę `{command}`.",
+			"no_speak_permission": "Nie mam uprawnień `SPEAK`, aby wykonać tę komendę`{command}`.",
+			"no_request_to_speak": "Nie mam uprawnień `REQUEST TO SPEAK`, aby wykonać tę komendę`{command}`.",
+			"different_voice_channel": "Nie jesteś połączony z {channel}, aby użyć tej komendy `{command}`.",
 			"no_music_playing": "Nic nie jest teraz odtwarzane.",
 			"no_dj_role": "Rola DJ nie jest ustawiona.",
-			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tego polecenia.",
-			"cooldown": "Poczekaj {time} sekund(y), zanim ponownie użyjesz polecenia `{command}`.",
+			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
+			"cooldown": "Poczekaj {time} sekund(y), zanim ponownie użyjesz tej komendy `{command}`.",
 			"error": "Wystąpił błąd: `{error}`"
 		},
 		"message": {
-			"prefix_mention": "Hej, mój prefiks dla tego serwera to `{prefix}`. Chcesz więcej informacji? Wpisz `{prefix}help`\nZachowaj bezpieczeństwo, bądź niesamowity!",
+			"prefix_mention": "Hej, mój prefiks dla tego serwera to `{prefix}`. Chcesz uzyskać więcej informacji? Uzyj komendy `{prefix}help`\nBądź bezpieczeny i niesamowity!",
 			"no_send_message": "Nie mam uprawnień **`SendMessage`** na `{guild}`\nkanale: {channel}.",
 			"no_embed_links": "Nie mam uprawnień **`EmbedLinks`**.",
-			"no_permission": "Nie mam wystarczających uprawnień, aby wykonać to polecenie.",
-			"no_user_permission": "Nie masz wystarczających uprawnień, aby użyć tego polecenia.",
-			"no_voice_channel": "Musisz być połączony z kanałem głosowym, aby użyć tego polecenia `{command}`.",
-			"no_connect_permission": "Nie mam uprawnień `CONNECT`, aby wykonać to polecenie `{command}`.",
-			"no_speak_permission": "Nie mam uprawnień `SPEAK`, aby wykonać to polecenie `{command}`.",
-			"no_request_to_speak": "Nie mam uprawnień `REQUEST TO SPEAK`, aby wykonać to polecenie `{command}`.",
-			"different_voice_channel": "Nie jesteś połączony z {channel}, aby użyć tego polecenia `{command}`.",
+			"no_permission": "Nie mam wystarczających uprawnień, aby wykonać tę komendę",
+			"no_user_permission": "Nie masz wystarczających uprawnień, aby użyć tej komendy.",
+			"no_voice_channel": "Musisz być połączony z kanałem głosowym, aby użyć tej komendy `{command}`.",
+			"no_connect_permission": "Nie mam uprawnień `CONNECT`, aby wykonać tę komendę `{command}`.",
+			"no_speak_permission": "Nie mam uprawnień `SPEAK`, aby wykonać tę komendę `{command}`.",
+			"no_request_to_speak": "Nie mam uprawnień `REQUEST TO SPEAK`, aby wykonać tę komendę `{command}`.",
+			"different_voice_channel": "Aby użyć tej komendy `{command}`, musisz być połączony z {channel}, .",
 			"no_music_playing": "Nic nie jest teraz odtwarzane.",
 			"no_dj_role": "Rola DJ nie jest ustawiona.",
-			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tego polecenia.",
+			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
 			"missing_arguments": "Brakujące argumenty",
-			"missing_arguments_description": "Podaj wymagane argumenty dla polecenia `{command}`.\n\nPrzykłady:\n{examples}",
+			"missing_arguments_description": "Podaj wymagane argumenty dla komendy `{command}`.\n\nPrzykłady:\n{examples}",
 			"syntax_footer": "Składnia: [] = opcjonalne, <> = wymagane",
-			"cooldown": "Poczekaj {time} sekund(y), zanim ponownie użyjesz polecenia `{command}`.",
-			"no_mention_everyone": "Nie możesz używać tego polecenia z @everyone lub @here.",
+			"cooldown": "Poczekaj {time} sekund(y), zanim ponownie użyjesz tej komendy `{command}`.",
+			"no_mention_everyone": "Nie możesz używać tej komendy z pingiem @everyone lub @here.",
 			"error": "Wystąpił błąd: `{error}`",
-			"no_voice_channel_queue": "Nie jesteś połączony z kanałem głosowym, aby dodawać utwory do kolejki.",
+			"no_voice_channel_queue": "Aby dodawać utwory do kolejki, musisz być połączony z kanałem głosowym.",
 			"no_permission_connect_speak": "Nie mam wystarczających uprawnień, aby połączyć się/mówić w <#{channel}>.",
-			"different_voice_channel_queue": "Nie jesteś połączony z <#{channel}>, aby dodawać utwory do kolejki."
+			"different_voice_channel_queue": "Aby dodawać utwory do kolejki, musisz być połączony z <#{channel}.>"
 		},
 		"setupButton": {
-			"no_voice_channel_button": "Nie jesteś połączony z kanałem głosowym, aby użyć tego przycisku.",
-			"different_voice_channel_button": "Nie jesteś połączony z {channel}, aby używać tych przycisków.",
+			"no_voice_channel_button": "Aby użyć tego przycisku, musisz być połączony z kanałem głosowym",
+			"different_voice_channel_button": "Aby używać tych przycisków, musisz być połączony z {channel}",
 			"now_playing": "Teraz odtwarzany",
 			"live": "NA ŻYWO",
-			"requested_by": "Zapytał {requester}",
-			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tego polecenia.",
-			"volume_set": "Głośność ustawiona na {vol}%",
+			"requested_by": "Żądany przez {requester}",
+			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
+			"volume_set": "Głośność utoru została ustawiona na {vol}%",
 			"volume_footer": "Głośność: {vol}%",
-			"paused": "Wstrzymany",
-			"resumed": "Wznówiony",
+			"paused": "Wstrzymano",
+			"resumed": "Wznowiono",
 			"pause_resume": "{name} muzykę.",
 			"pause_resume_footer": "{name} przez {displayName}",
-			"no_music_to_skip": "Nie ma muzyki do pominięcia.",
+			"no_music_to_skip": "Nie ma muzyki, którą można by pominąć.",
 			"skipped": "Pominięto muzykę.",
 			"skipped_footer": "Pominięty przez {displayName}",
 			"stopped": "Zatrzymano muzykę.",
 			"stopped_footer": "Zatrzymany przez {displayName}",
 			"nothing_playing": "Nic nie jest teraz odtwarzane",
-			"loop_set": "Pętla ustawiona na {loop}.",
-			"loop_footer": "Pętla ustawiona na {loop} przez {displayName}",
+			"loop_set": "Zapętlenie ustawione na {loop}.",
+			"loop_footer": "Zapętlenie ustawione na {loop} przez {displayName}",
 			"shuffled": "Potasowano kolejkę.",
-			"no_previous_track": "Nie ma poprzedniego utworu.",
+			"no_previous_track": "Nie ma żadnego poprzedniego utworu.",
 			"playing_previous": "Odtwarzanie poprzedniego utworu.",
-			"previous_footer": "Odtwarzanie poprzedniego utworu przez {displayName}",
+			"previous_footer": "Utwór ostatnio odtwarzany przez {displayName}",
 			"rewind_limit": "Nie można cofnąć muzyki o więcej niż długość utworu.",
 			"rewinded": "Cofnięto muzykę.",
 			"rewind_footer": "Cofnięty przez {displayName}",
