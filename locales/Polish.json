@@ -64,7 +64,7 @@
 				"role_not_found": "Rola DJ <@&{roleId}> nie została dodana.",
 				"role_removed": "Rola DJ <@&{roleId}> została pomyślnie usunięta.",
 				"all_roles_cleared": "Wszystkie role DJ zostały pomyślnie usunięte.",
-				"toggle": "Tryb DJ został przełączony na {status}."
+				"toggle": "Tryb DJ został pomyślnie przełączony na {status}."
 			},
 			"options": {
 				"add": "Rola DJ, którą chcesz dodać",
@@ -113,7 +113,7 @@
 			},
 			"messages": {
 				"channel_created": "Kanał żądań utworu został utworzony i jest nim <#{channelId}>.",
-				"channel_deleted": "Kanał żądań utworu został pomyślnie usunięty.",
+				"channel_deleted": "Kanał żądań utworu został pomyślnie usunięty. Jeśli kanał nie zostanie usunięty samoistnie, usuń go samodzielnie.",
 				"channel_info": "Kanałem żądań utworu jest <#{channelId}>."
 			},
 			"options": {
@@ -263,7 +263,7 @@
 		},
 		"nowplaying": {
 			"description": "Pokazuje aktualnie odtwarzany utwór",
-			"now_playing": "Teraz odtwarzany",
+			"now_playing": "Teraz odtwarzane",
 			"track_info": "[{title}]({uri}) - Żądany przez: {requester}\n\n`{bar}`"
 		},
 		"pause": {
@@ -280,7 +280,7 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
 				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
+				"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów."
 			},
 			"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki.",
 			"added_playlist_to_queue": "Dodano {length} utworów do kolejki."
@@ -295,14 +295,14 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
 				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
+				"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów."
 			},
 			"added_to_play_next": "Dodano utwór [{title}]({uri}) do odtworzenia jako następny w kolejce.",
 			"added_playlist_to_play_next": "Dodano {length} utworów do odtworzenia jako następne w kolejce."
 		},
 		"queue": {
 			"description": "Pokazuje aktualną kolejkę",
-			"now_playing": "Teraz odtwarzany: [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"now_playing": "Teraz odtwarzane: [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
 			"live": "NA ŻYWO",
 			"track_info": "{index}. [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
 			"title": "Bieżąca kolejka",
@@ -515,7 +515,7 @@
 			"already_paused": "Utwór jest już wstrzymany."
 		},
 		"trackStart": {
-			"now_playing": "Teraz odtwarzany",
+			"now_playing": "Teraz odtwarzane",
 			"requested_by": "Żądany przez {user}",
 			"duration": "Czas trwania",
 			"author": "Autor",
@@ -532,15 +532,15 @@
 			"looping_off_by": "Zapętlenie wyłączone przez {user}"
 		},
 		"setupStart": {
-			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by {requester}",
-			"error_searching": "There was an error while searching.",
-			"no_results": "There were no results found.",
-			"nothing_playing": "Nothing playing right now.",
-			"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
-			"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs.",
-			"added_to_queue": "Added [{title}]({uri}) to the queue.",
-			"added_playlist_to_queue": "Added [{length}] songs from the playlist to the queue."
+			"now_playing": "Teraz odtwarzane",
+			"description": "[{title}]({uri}) by {author} • `[${length}]` - Żądany przez @{requester}",
+			"error_searching": "Wystąpił błąd podczas wyszukiwania.",
+			"no_results": "Nie znaleziono żadnych wyników.",
+			"nothing_playing": "Obecnie nic nie jest odtwarzane",
+			"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
+			"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów.",
+			"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki.",
+			"added_playlist_to_queue": "Dodano {length} utworów do kolejki."
 		}
 	},
 	"event": {
@@ -588,7 +588,7 @@
 		"setupButton": {
 			"no_voice_channel_button": "Aby użyć tego przycisku, musisz być połączony z kanałem głosowym.",
 			"different_voice_channel_button": "Aby używać tych przycisków, musisz być połączony z {channel}.",
-			"now_playing": "Teraz odtwarzany",
+			"now_playing": "Teraz odtwarzane",
 			"live": "NA ŻYWO",
 			"requested_by": "Żądany przez {requester}",
 			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
