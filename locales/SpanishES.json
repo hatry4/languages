@@ -26,89 +26,573 @@
 			"not_found": "Este `{cmdName}` comando no existe.",
 			"help_cmd": "**Descripción:** {description}\n**Uso:** {usage}\n**Ejemplos:** {examples}\n**Alias:** {aliases}\n**Categoria:** {category}\n**Cooldown:** {cooldown} segundos\n**Permisos:** {premUser}\n**Permisos del Bot:** {premBot}\n**Solo Desarrollador:** {dev}\n**Comando de barra diagonal:** {slash}\n**Args:** {args}\n**Player:** {player}\n**DJ:** {dj}\n**Permisos de DJ:** {djPerm}\n**Voz:** {voice}",
 			"footer": "Usa {prefix}help <comando> para obtener más información sobre un comando."
+		},
+		"botinfo": {
+			"description": "Information about the bot",
+			"content": "Bot Information:\n- **Operating System**: {osInfo}\n- **Uptime**: {osUptime}\n- **Hostname**: {osHostname}\n- **CPU Architecture**: {cpuInfo}\n- **CPU Usage**: {cpuUsed}%\n- **Memory Usage**: {memUsed}MB / {memTotal}GB\n- **Node Version**: {nodeVersion}\n- **Discord Version**: {discordJsVersion}\n- **Connected to** {guilds} guilds, {channels} channels, and {users} users\n- **Total Commands**: {commands}"
+		},
+		"about": {
+			"description": "Shows information about the bot",
+			"fields": {
+				"creator": "Creator",
+				"repository": "Repository",
+				"support": "Support",
+				"description": "He really wanted to make his first open source project ever for more coding experience. In this project, he was challenged to make a project with fewer bugs. Hope you enjoy using LavaMusic!"
+			}
+		},
+		"247": {
+			"description": "Set the bot to stay in the voice channel",
+			"errors": {
+				"not_in_voice": "You need to be in a voice channel to use this command.",
+				"generic": "An error occurred while trying to execute this command."
+			},
+			"messages": {
+				"disabled": "**24/7 mode has been disabled**",
+				"enabled": "**24/7 mode has been enabled. The bot will not leave the voice channel even if there are no people in the voice channel.**"
+			}
+		},
+		"dj": {
+			"description": "Manage the DJ mode and associated roles",
+			"errors": {
+				"provide_role": "Please provide a role.",
+				"no_roles": "The DJ role is empty.",
+				"invalid_subcommand": "Please provide a valid subcommand."
+			},
+			"messages": {
+				"role_exists": "The DJ role <@&{roleId}> is already added.",
+				"role_added": "The DJ role <@&{roleId}> has been added.",
+				"role_not_found": "The DJ role <@&{roleId}> is not added.",
+				"role_removed": "The DJ role <@&{roleId}> has been removed.",
+				"all_roles_cleared": "All DJ roles have been removed.",
+				"toggle": "The DJ mode has been toggled to {status}."
+			},
+			"options": {
+				"add": "The DJ role you want to add",
+				"remove": "The DJ role you want to remove",
+				"clear": "Clears all DJ roles",
+				"toggle": "Toggles the DJ role",
+				"role": "The DJ role"
+			},
+			"subcommands": "Subcommands"
+		},
+		"prefix": {
+			"description": "Shows or sets the bot's prefix",
+			"errors": {
+				"prefix_too_long": "The prefix cannot be longer than 3 characters."
+			},
+			"messages": {
+				"current_prefix": "The prefix for this server is `{prefix}`",
+				"prefix_set": "The prefix for this server is now `{prefix}`",
+				"prefix_reset": "The prefix for this server is now `{prefix}`"
+			},
+			"options": {
+				"set": "Sets the prefix",
+				"prefix": "The prefix you want to set",
+				"reset": "Resets the prefix to the default one"
+			}
+		},
+		"setup": {
+			"description": "Sets up the bot",
+			"errors": {
+				"channel_exists": "The song request channel already exists.",
+				"channel_not_exists": "The song request channel doesn't exist.",
+				"channel_delete_fail": "The song request channel has been deleted. If the channel is not deleted normally, please delete it yourself."
+			},
+			"messages": {
+				"channel_created": "The song request channel has been created in <#{channelId}>.",
+				"channel_deleted": "The song request channel has been deleted.",
+				"channel_info": "The song request channel is <#{channelId}>."
+			},
+			"options": {
+				"create": "Creates the song request channel",
+				"delete": "Deletes the song request channel",
+				"info": "Shows the song request channel"
+			}
+		},
+		"8d": {
+			"description": "on/off 8d filter",
+			"messages": {
+				"filter_enabled": "8D filter has been enabled.",
+				"filter_disabled": "8D filter has been disabled."
+			}
+		},
+		"bassboost": {
+			"description": "on/off bassboost filter",
+			"messages": {
+				"filter_enabled": "Bassboost filter has been enabled. **Be careful, listening too loudly can damage your hearing!**",
+				"filter_disabled": "Bassboost filter has been disabled."
+			}
+		},
+		"distorsion": {
+			"description": "Toggle the distorsion filter on/off",
+			"messages": {
+				"filter_enabled": "Distorsion filter has been enabled.",
+				"filter_disabled": "Distorsion filter has been disabled."
+			}
+		},
+		"karaoke": {
+			"description": "Toggle the karaoke filter on/off",
+			"messages": {
+				"filter_enabled": "Karaoke filter has been enabled.",
+				"filter_disabled": "Karaoke filter has been disabled."
+			}
+		},
+		"lowpass": {
+			"description": "Toggle the lowpass filter on/off",
+			"messages": {
+				"filter_enabled": "Lowpass filter has been enabled.",
+				"filter_disabled": "Lowpass filter has been disabled."
+			}
+		},
+		"nightcore": {
+			"description": "Toggle the nightcore filter on/off",
+			"messages": {
+				"filter_enabled": "Nightcore filter has been enabled.",
+				"filter_disabled": "Nightcore filter has been disabled."
+			}
+		},
+		"pitch": {
+			"description": "Toggle the pitch filter on/off",
+			"options": {
+				"pitch": "The number you want to set the pitch to (between 0.5 and 5)"
+			},
+			"errors": {
+				"invalid_number": "Please provide a valid number between 0.5 and 5."
+			},
+			"messages": {
+				"pitch_set": "Pitch has been set to {pitch}."
+			}
+		},
+		"rate": {
+			"description": "Change the rate of the song",
+			"options": {
+				"rate": "The number you want to set the rate to (between 0.5 and 5)"
+			},
+			"errors": {
+				"invalid_number": "Please provide a valid number between 0.5 and 5."
+			},
+			"messages": {
+				"rate_set": "Rate has been set to {rate}."
+			}
+		},
+		"reset": {
+			"description": "Resets the active filters",
+			"messages": {
+				"filters_reset": "Filters have been reset."
+			}
+		},
+		"rotation": {
+			"description": "Toggle the rotation filter on/off",
+			"messages": {
+				"enabled": "Rotation filter has been enabled.",
+				"disabled": "Rotation filter has been disabled."
+			}
+		},
+		"speed": {
+			"description": "Change the speed of the song",
+			"options": {
+				"speed": "The speed you want to set"
+			},
+			"messages": {
+				"invalid_number": "Please provide a valid number between 0.5 and 5.",
+				"set_speed": "Speed has been set to {speed}."
+			}
+		},
+		"tremolo": {
+			"description": "Toggle the tremolo filter on/off",
+			"messages": {
+				"enabled": "Tremolo filter has been enabled.",
+				"disabled": "Tremolo filter has been disabled."
+			}
+		},
+		"vibrato": {
+			"description": "Toggle the vibrato filter on/off",
+			"messages": {
+				"enabled": "Vibrato filter has been enabled.",
+				"disabled": "Vibrato filter has been disabled."
+			}
+		},
+		"autoplay": {
+			"description": "Toggles autoplay",
+			"messages": {
+				"enabled": "Autoplay has been enabled.",
+				"disabled": "Autoplay has been disabled."
+			}
+		},
+		"clearqueue": {
+			"description": "Clears the queue",
+			"messages": {
+				"cleared": "The queue has been cleared."
+			}
+		},
+		"grab": {
+			"description": "Grabs the current playing song on your DM",
+			"content": "**Duration:** {length}\n**Requested by:** {requester}\n**Link:** [Click here]({uri})",
+			"check_dm": "Please check your DM.",
+			"dm_failed": "I couldn't send you a DM."
+		},
+		"join": {
+			"description": "Joins the voice channel",
+			"already_connected": "I'm already connected to <#{channelId}>.",
+			"no_voice_channel": "You need to be in a voice channel to use this command.",
+			"joined": "Successfully joined <#{channelId}>."
+		},
+		"leave": {
+			"description": "Leaves the voice channel",
+			"left": "Successfully left <#{channelId}>.",
+			"not_in_channel": "I'm not in a voice channel."
+		},
+		"loop": {
+			"description": "Loop the current song or the queue",
+			"looping_song": "**Looping the song.**",
+			"looping_queue": "**Looping the queue.**",
+			"looping_off": "**Looping is now off.**"
+		},
+		"nowplaying": {
+			"description": "Shows the currently playing song",
+			"now_playing": "Now Playing",
+			"track_info": "[{title}]({uri}) - Requested By: {requester}\n\n`{bar}`"
+		},
+		"pause": {
+			"description": "Pauses the current song",
+			"successfully_paused": "Successfully paused the song."
+		},
+		"play": {
+			"description": "Plays a song from YouTube, Spotify or http",
+			"options": {
+				"song": "The song you want to play"
+			},
+			"loading": "Loading...",
+			"errors": {
+				"search_error": "There was an error while searching.",
+				"no_results": "There were no results found.",
+				"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
+				"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs."
+			},
+			"added_to_queue": "Added [{title}]({uri}) to the queue.",
+			"added_playlist_to_queue": "Added {length} songs to the queue."
+		},
+		"playnext": {
+			"description": "Add the song to play next in queue",
+			"options": {
+				"song": "The song you want to play"
+			},
+			"loading": "Loading...",
+			"errors": {
+				"search_error": "There was an error while searching.",
+				"no_results": "There were no results found.",
+				"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
+				"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs."
+			},
+			"added_to_play_next": "Added [{title}]({uri}) to play next in the queue.",
+			"added_playlist_to_play_next": "Added {length} songs to play next in the queue."
+		},
+		"queue": {
+			"description": "Shows the current queue",
+			"now_playing": "Now playing: [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"live": "LIVE",
+			"track_info": "{index}. [{title}]({uri}) - Requested By: {requester} - Duration: {duration}",
+			"title": "Queue",
+			"page_info": "Page {index} of {total}"
+		},
+		"remove": {
+			"description": "Removes a song from the queue",
+			"options": {
+				"song": "The song number you want to remove"
+			},
+			"errors": {
+				"no_songs": "There are no songs in the queue.",
+				"invalid_number": "Please provide a valid song number."
+			},
+			"messages": {
+				"removed": "Removed song number {songNumber} from the queue."
+			}
+		},
+		"replay": {
+			"description": "Replays the current track",
+			"errors": {
+				"not_seekable": "Cannot replay this track as it is not seekable."
+			},
+			"messages": {
+				"replaying": "Replaying the current track."
+			}
+		},
+		"resume": {
+			"description": "Resumes the current song",
+			"errors": {
+				"not_paused": "The player is not paused."
+			},
+			"messages": {
+				"resumed": "Resumed the player."
+			}
+		},
+		"search": {
+			"description": "Searches for a song",
+			"options": {
+				"song": "The song you want to search"
+			},
+			"errors": {
+				"no_results": "No results found.",
+				"search_error": "There was an error while searching."
+			},
+			"messages": {
+				"added_to_queue": "Added [{{title}}]({{uri}}) to the queue."
+			}
+		},
+		"seek": {
+			"description": "Seeks to a certain time in the song",
+			"options": {
+				"duration": "The duration to seek to"
+			},
+			"errors": {
+				"invalid_format": "Invalid time format. Examples: seek 1m, seek 1h 30m",
+				"not_seekable": "This track is not seekable.",
+				"beyond_duration": "Cannot seek beyond the song duration of {{length}}."
+			},
+			"messages": {
+				"seeked_to": "Seeked to {{duration}}"
+			}
+		},
+		"shuffle": {
+			"description": "Shuffles the queue",
+			"messages": {
+				"shuffled": "Shuffled the queue."
+			}
+		},
+		"skip": {
+			"description": "Skips the current song",
+			"messages": {
+				"skipped": "Skipped [{{title}}]({{uri}})."
+			}
+		},
+		"skipto": {
+			"description": "Skips to a specific song in the queue",
+			"options": {
+				"number": "The number of the song you want to skip to"
+			},
+			"errors": {
+				"invalid_number": "Please provide a valid number."
+			},
+			"messages": {
+				"skipped_to": "Skipped to song number {{number}}."
+			}
+		},
+		"stop": {
+			"description": "Stops the music and clears the queue",
+			"messages": {
+				"stopped": "Stopped the music and cleared the queue."
+			}
+		},
+		"volume": {
+			"description": "Sets the volume of the player",
+			"options": {
+				"number": "The volume you want to set"
+			},
+			"messages": {
+				"invalid_number": "Please provide a valid number.",
+				"too_low": "The volume can't be lower than 0.",
+				"too_high": "The volume can't be higher than 200. Do you want to damage your hearing or speakers? Hmmm, I don't think that's such a good idea.",
+				"set": "Set the volume to {volume}"
+			}
+		},
+		"addsong": {
+			"description": "Adds a song to the playlist",
+			"options": {
+				"playlist": "The playlist you want to add",
+				"song": "The song you want to add"
+			},
+			"messages": {
+				"no_playlist": "Please provide a playlist",
+				"no_song": "Please provide a song",
+				"playlist_not_found": "That playlist doesn't exist",
+				"no_songs_found": "No songs found",
+				"added": "Added {count} song(s) to {playlist}"
+			}
+		},
+		"create": {
+			"description": "Creates a playlist",
+			"options": {
+				"name": "The name of the playlist"
+			},
+			"messages": {
+				"name_too_long": "Playlist names can only be 50 characters long.",
+				"playlist_exists": "A playlist with that name already exists. Please use a different name.",
+				"playlist_created": "Playlist **{name}** has been created."
+			}
+		},
+		"delete": {
+			"description": "Deletes a playlist",
+			"options": {
+				"playlist": "The playlist you want to delete"
+			},
+			"messages": {
+				"playlist_not_found": "That playlist doesn't exist.",
+				"playlist_deleted": "Deleted playlist **{playlistName}**."
+			}
+		},
+		"list": {
+			"description": "Retrieves all playlists for the user",
+			"options": {
+				"user": "The user whose playlists you want to retrieve"
+			},
+			"messages": {
+				"no_playlists": "This user has no playlists.",
+				"your": "Your",
+				"playlists_title": "{username}'s Playlists",
+				"error": "An error occurred while retrieving the playlists."
+			}
+		},
+		"load": {
+			"description": "Loads a playlist",
+			"options": {
+				"playlist": "The playlist you want to load"
+			},
+			"messages": {
+				"playlist_not_exist": "That playlist doesn't exist.",
+				"playlist_empty": "That playlist is empty.",
+				"playlist_loaded": "Loaded `{name}` with `{count}` songs."
+			}
+		},
+		"removesong": {
+			"description": "Removes a song from the playlist",
+			"options": {
+				"playlist": "The playlist you want to remove from",
+				"song": "The song you want to remove"
+			},
+			"messages": {
+				"provide_playlist": "Please provide a playlist.",
+				"provide_song": "Please provide a song.",
+				"playlist_not_exist": "That playlist doesn't exist.",
+				"song_not_found": "No matching song found.",
+				"song_removed": "Removed {song} from {playlist}.",
+				"error_occurred": "An error occurred while removing the song."
+			}
+		},
+		"steal": {
+			"description": "Steals a playlist from another user and adds it to your playlists",
+			"options": {
+				"playlist": "The playlist you want to steal",
+				"user": "The user from whom you want to steal the playlist"
+			},
+			"messages": {
+				"provide_playlist": "Please provide a playlist name.",
+				"provide_user": "Please mention a user.",
+				"playlist_not_exist": "That playlist doesn't exist for the mentioned user.",
+				"playlist_stolen": "Successfully stole the playlist `{playlist}` from {user}.",
+				"error_occurred": "An error occurred while stealing the playlist."
+			}
 		}
 	},
 	"buttons": {
-		"invite": "Invitar",
-		"support": "Servidor de Soporte"
+		"invite": "Invite",
+		"support": "Support Server",
+		"previous": "Previous",
+		"resume": "Resume",
+		"stop": "Stop",
+		"skip": "Skip",
+		"loop": "Loop"
 	},
-	"Set the bot to stay in the voice channel": "Configure el bot para que permanezca en el canal de voz",
-	"Manage the DJ mode and associated roles": "Administrar el modo DJ y los roles asociados",
-	"Shows or sets the bot's prefix": "Muestra o establece el prefijo del bot.",
-	"Sets up the bot": "Configura el bot",
-	"on/off 8d filter": "Enciende/apaga el filtro de 8d",
-	"on/off bassboost filter": "Enciende/apaga el filtro de refuerzo de graves",
-	"Toggle the distorsion filter on/off": "Activar/desactivar el filtro de distorsión",
-	"Toggle the karaoke filter on/off": "Activar/desactivar el filtro de karaoke",
-	"Toggle the lowpass filter on/off": "Activar/desactivar el filtro de bajos",
-	"Toggle the nightcore filter on/off": "Activar/desactivar el filtro de nightcore",
-	"Toggle the pitch filter on/off": "Activar/desactivar el filtro de tono",
-	"Change the rate of the song": "Cambia el ritmo de la canción.",
-	"Resets the active filters": "Restablece los filtros activos",
-	"on/off rotation filter": "Activar/desactivar el filtro de rotación",
-	"Change the speed of the song": "Cambia la velocidad de la canción.",
-	"on/off the tremolo filter": "Activar/desactivar el filtro de trémolo",
-	"on/off vibrato filter": "Activar/desactivar el filtro de vibrato",
-	"Shows information about the bot": "Muestra información del bot",
-	"Information about the bot": "Información sobre el bot",
-	"Toggles autoplay": "Alterna la reproducción automática",
-	"Clears the queue": "Limpia la cola",
-	"Grabs the current playing song on your DM": "Te envía la canción que se está reproduciendo al MD",
-	"Joins the voice channel": "Se une al canal de voz",
-	"Leaves the voice channel": "Abandona el canal de voz",
-	"Loop the current song or the queue": "Repetir la canción actual o la cola",
-	"Shows the currently playing song": "Muestra la canción que se está reproduciendo",
-	"Pauses the current song": "Pausa la canción actual",
-	"Plays a song from YouTube, Spotify or http": "Reproduce una canción de YouTube, Spotify o http",
-	"Add the song to play next in queue": "Añade la canción para reproducirla a continuación en la cola",
-	"Shows the current queue": "Muestra la cola actual",
-	"Removes a song from the queue": "Elimina una canción de la cola",
-	"Replays the current track": "Re-reeproduce la pista actual",
-	"Resumes the current song": "Reanuda la canción actual",
-	"Searches for a song": "Busca una canción",
-	"Seeks to a certain time in the song": "Salta a un momento determinado de la canción",
-	"Shuffles the queue": "Mezcla la cola",
-	"Skips the current song": "Salta la canción actual",
-	"Skips to a specific song in the queue": "Salta a una canción específica en la cola",
-	"Stops the music and clears the queue": "Detiene la música y borra la cola",
-	"Sets the volume of the player": "Establece el volumen del reproductor",
-	"Adds a song to the playlist": "Agrega una canción a la lista de reproducción",
-	"Creates a playlist": "Crea una lista de reproducción",
-	"Deletes a playlist": "Elimina una lista de reproducción",
-	"Retrieves all playlists for the user": "Muestra todas las listas de reproducción del usuario",
-	"Loads a playlist": "Carga una lista de reproducción",
-	"Removes a song from the playlist": "Elimina una canción de la lista de reproducción",
-	"Steals a playlist from another user and adds it to your playlists": "Roba una lista de reproducción de otro usuario y la agrega a tus listas de reproducción",
-	"The dj role you want to add": "El rol de DJ que deseas agregar",
-	"The dj role you want to remove": "El rol de DJ que deseas eliminar",
-	"Clears all dj roles": "Borra todos los roles de DJ",
-	"Toggles the dj role": "Cambia el rol de DJ",
-	"Sets the prefix": "Establece el prefijo",
-	"Resets the prefix to the default one": "Restablece el prefijo al predeterminado",
-	"Creates the song request channel": "Crea el canal de solicitud de canciones",
-	"Deletes the song request channel": "Elimina el canal de solicitud de canciones",
-	"Shows the song request channel": "Muestra el canal de solicitud de canciones",
-	"The number you want to set the pitch to (between 0": {
-		"5 and 5)": "El número al que desea establecer el tono (entre 0,5 y 5)"
+	"player": {
+		"errors": {
+			"no_player": "There is no active player in this guild.",
+			"no_channel": "You need to be in a voice channel to use this command.",
+			"queue_empty": "The queue is empty.",
+			"no_previous": "There are no previous songs in the queue.",
+			"no_song": "There are no songs in the queue.",
+			"already_paused": "The song is already paused."
+		},
+		"trackStart": {
+			"now_playing": "Now Playing",
+			"requested_by": "Requested by {user}",
+			"duration": "Duration",
+			"author": "Author",
+			"not_connected_to_voice_channel": "You are not connected to <#{channel}> to use these buttons.",
+			"need_dj_role": "You need to have the DJ role to use this command.",
+			"previous_by": "Previous by {user}",
+			"no_previous_song": "There is no previous song.",
+			"paused_by": "Paused by {user}",
+			"resumed_by": "Resumed by {user}",
+			"skipped_by": "Skipped by {user}",
+			"no_more_songs_in_queue": "There is no more song in the queue.",
+			"looping_by": "Looping by {user}",
+			"looping_queue_by": "Looping Queue by {user}",
+			"looping_off_by": "Looping Off by {user}"
+		}
 	},
-	"The number you want to set the rate to (between 0": {
-		"5 and 5)": "El número al que desea establecer la tasa (entre 0,5 y 5)"
-	},
-	"The speed you want to set": "La velocidad que deseas configurar",
-	"The song you want to play": "La canción que quieres escuchar",
-	"The song number": "El número de la canción",
-	"The song you want to search": "La canción que quieres buscar",
-	"The duration to seek to": "El tiempo al que quieres saltar",
-	"The number of the song you want to skip to": "El número de la canción a la que deseas saltar",
-	"The volume you want to set": "El volumen que deseas configurar",
-	"The playlist you want to add": "La lista de reproducción que deseas agregar",
-	"The song you want to add": "La canción que quieres añadir",
-	"The name of the playlist": "El nombre de la lista de reproducción",
-	"The playlist you want to delete": "La lista de reproducción que deseas eliminar",
-	"The user whose playlists you want to retrieve": "La usuario cuyas listas de reproducción quieres ver",
-	"The playlist you want to load": "La lista de reproducción que deseas cargar",
-	"The playlist you want to remove from": "La lista de reproducción de la que deseas eliminar",
-	"The song you want to remove": "La canción que deseas eliminar",
-	"The playlist you want to steal": "La lista de reproducción que quieres robar",
-	"The user from whom you want to steal the playlist": "El usuario al que le quieres robar la lista de reproducción"
+	"event": {
+		"interaction": {
+			"setup_channel": "You can't use this command in the setup channel.",
+			"no_send_message": "I don't have **`SendMessage`** permission in `{guild}`\nchannel: {channel}.",
+			"no_embed_links": "I don't have **`EmbedLinks`** permission.",
+			"no_permission": "I don't have enough permissions to execute this command.",
+			"no_user_permission": "You don't have enough permissions to use this command.",
+			"no_voice_channel": "You must be connected to a voice channel to use this `{command}` command.",
+			"no_connect_permission": "I don't have `CONNECT` permissions to execute this `{command}` command.",
+			"no_speak_permission": "I don't have `SPEAK` permissions to execute this `{command}` command.",
+			"no_request_to_speak": "I don't have `REQUEST TO SPEAK` permission to execute this `{command}` command.",
+			"different_voice_channel": "You are not connected to {channel} to use this `{command}` command.",
+			"no_music_playing": "Nothing is playing right now.",
+			"no_dj_role": "DJ role is not set.",
+			"no_dj_permission": "You need to have the DJ role to use this command.",
+			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
+			"error": "An error occurred: `{error}`"
+		},
+		"message": {
+			"prefix_mention": "Hey, my prefix for this server is `{prefix}`. Want more info? then do `{prefix}help`\nStay Safe, Stay Awesome!",
+			"no_send_message": "I don't have **`SendMessage`** permission in `{guild}`\nchannel: {channel}.",
+			"no_embed_links": "I don't have **`EmbedLinks`** permission.",
+			"no_permission": "I don't have enough permissions to execute this command.",
+			"no_user_permission": "You don't have enough permissions to use this command.",
+			"no_voice_channel": "You must be connected to a voice channel to use this `{command}` command.",
+			"no_connect_permission": "I don't have `CONNECT` permissions to execute this `{command}` command.",
+			"no_speak_permission": "I don't have `SPEAK` permissions to execute this `{command}` command.",
+			"no_request_to_speak": "I don't have `REQUEST TO SPEAK` permission to execute this `{command}` command.",
+			"different_voice_channel": "You are not connected to {channel} to use this `{command}` command.",
+			"no_music_playing": "Nothing is playing right now.",
+			"no_dj_role": "DJ role is not set.",
+			"no_dj_permission": "You need to have the DJ role to use this command.",
+			"missing_arguments": "Missing Arguments",
+			"missing_arguments_description": "Please provide the required arguments for the `{command}` command.\n\nExamples:\n{examples}",
+			"syntax_footer": "Syntax: [] = optional, <> = required",
+			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
+			"no_mention_everyone": "You can't use this command with everyone or here.",
+			"error": "An error occurred: `{error}`",
+			"no_voice_channel_queue": "You are not connected to a voice channel to queue songs.",
+			"no_permission_connect_speak": "I don't have enough permission to connect/speak in <#{channel}>.",
+			"different_voice_channel_queue": "You are not connected to <#{channel}> to queue songs."
+		},
+		"setupButton": {
+			"no_voice_channel_button": "You are not connected to a voice channel to use this button.",
+			"different_voice_channel_button": "You are not connected to {channel} to use these buttons.",
+			"now_playing": "Now Playing",
+			"live": "LIVE",
+			"requested_by": "Requested by {requester}",
+			"no_dj_permission": "You need to have the DJ role to use this command.",
+			"volume_set": "Volume set to {vol}%",
+			"volume_footer": "Volume: {vol}%",
+			"paused": "Paused",
+			"resumed": "Resumed",
+			"pause_resume": "{name} the music.",
+			"pause_resume_footer": "{name} by {displayName}",
+			"no_music_to_skip": "There is no music to skip.",
+			"skipped": "Skipped the music.",
+			"skipped_footer": "Skipped by {displayName}",
+			"stopped": "Stopped the music.",
+			"stopped_footer": "Stopped by {displayName}",
+			"nothing_playing": "Nothing playing right now",
+			"loop_set": "Loop set to {loop}.",
+			"loop_footer": "Loop set to {loop} by {displayName}",
+			"shuffled": "Shuffled the queue.",
+			"no_previous_track": "There is no previous track.",
+			"playing_previous": "Playing the previous track.",
+			"previous_footer": "Playing the previous track by {displayName}",
+			"rewind_limit": "You cannot rewind the music more than the length of the song.",
+			"rewinded": "Rewinded the music.",
+			"rewind_footer": "Rewinded by {displayName}",
+			"forward_limit": "You cannot forward the music more than the length of the song.",
+			"forwarded": "Forwarded the music.",
+			"forward_footer": "Forwarded by {displayName}",
+			"button_not_available": "This button is not available."
+		}
+	}
 }

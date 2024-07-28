@@ -6,6 +6,33 @@
 2. 📋 Copy the contents of the `EnglishUS.json` file into the new file.
 3. 🌐 Translate the strings in the new file to the desired language.
 
+### Progress
+
+- [x] English (US) - `EnglishUS.json` (Default)
+- [ ] Hindi - `Hindi.json` (In Progress)
+- [ ] Spanish (ES) - `SpanishES.json` (In Progress)
+- [ ] Korean - `Korean.json` (In Progress)
+- [ ] Portuguese (PT) - `PortuguesePT.json` (In Progress)
+- [ ] Polish - `Polish.json` (In Progress)
+- [ ] French - `French.json` (In Progress)
+- [ ] German - `German.json` (In Progress)
+
+
+## 📝 Translation JSON Structure
+
+The translation JSON file should be structured as follows:
+
+```json
+{
+	"category": {
+		"command": {
+			"description": "Description of the command.",
+			"content": "Command content.",
+			"key": "value"
+		}
+	}
+}
+```
 ### Example Translation JSON
 
 **EnglishUS:**
