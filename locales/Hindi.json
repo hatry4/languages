@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Abhi Chal Raha Hai",
-			"description": "{author} dwara [{title}]({uri}) • `[${length}]` - {requester} dwara anurodh kiya gaya",
+			"description": "{author} dwara [{title}]({uri}) • `[${length}]` - <@{requester}> dwara anurodh kiya gaya",
 			"error_searching": "Khojte samay ek error aaya.",
 			"no_results": "Koi result nahin mila.",
 			"nothing_playing": "Abhi kuchh bhi play nahin ho raha hai.",
