@@ -88,7 +88,7 @@
 			"options": {
 				"set": "Définit le préfixe",
 				"prefix": "Le préfixe que vous souhaitez définir",
-				"reset":"Réinitialise le préfixe à celui par défaut"
+				"reset": "Réinitialise le préfixe à celui par défaut"
 			}
 		},
 		"setup": {
@@ -338,7 +338,7 @@
 				"search_error": "Une erreur s'est produite lors de la recherche."
 			},
 			"messages": {
-				"added_to_queue": "Ajouté [{{title}}]({{uri}}) à la file d'attente."
+				"added_to_queue": "Ajouté [{title}]({uri}) à la file d'attente."
 			}
 		},
 		"seek": {
@@ -364,7 +364,7 @@
 		"skip": {
 			"description": "Passe la chanson actuelle",
 			"messages": {
-				"skipped": "Passé [{{title}}]({{uri}})."
+				"skipped": "Passé [{title}]({uri})."
 			}
 		},
 		"skipto": {
@@ -376,7 +376,7 @@
 				"invalid_number": "Veuillez fournir un nombre valide."
 			},
 			"messages": {
-				"skipped_to": "Passé à la chanson numéro {{number}}."
+				"skipped_to": "Passé à la chanson numéro {number}."
 			}
 		},
 		"stop": {

@@ -88,7 +88,7 @@
 			"options": {
 				"set": "Sets the prefix",
 				"prefix": "The prefix you want to set",
-				"reset":"Resets the prefix to the default one"
+				"reset": "Resets the prefix to the default one"
 			}
 		},
 		"setup": {
@@ -338,7 +338,7 @@
 				"search_error": "There was an error while searching."
 			},
 			"messages": {
-				"added_to_queue": "Added [{{title}}]({{uri}}) to the queue."
+				"added_to_queue": "Added [{title}]({uri}) to the queue."
 			}
 		},
 		"seek": {
@@ -364,7 +364,7 @@
 		"skip": {
 			"description": "Skips the current song",
 			"messages": {
-				"skipped": "Skipped [{{title}}]({{uri}})."
+				"skipped": "Skipped [{title}]({uri})."
 			}
 		},
 		"skipto": {
@@ -376,7 +376,7 @@
 				"invalid_number": "Please provide a valid number."
 			},
 			"messages": {
-				"skipped_to": "Skipped to song number {{number}}."
+				"skipped_to": "Skipped to song number {number}."
 			}
 		},
 		"stop": {
