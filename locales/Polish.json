@@ -109,7 +109,7 @@
 			"errors": {
 				"channel_exists": "Kanał żądań utworu już istnieje.",
 				"channel_not_exists": "Kanał żądań utworu nie istnieje.",
-				"channel_delete_fail": "Kanał żądań utworu został usunięty. Jeśli kanał nie zostanie usunięty samoistnie, usuń go samodzielnie."
+				"channel_delete_fail": "Wystąpił błąd podczas usuwania kanału żądań."
 			},
 			"messages": {
 				"channel_created": "Kanał żądań utworu został utworzony i jest nim <#{channelId}>.",
@@ -240,7 +240,7 @@
 		},
 		"grab": {
 			"description": "Wysyła aktualnie odtwarzany utwór na DM",
-			"content": "**Czas trwania:** {length}\n**Żądany przez:** {requester}\n**Link:** [Kliknij tutaj]({uri})",
+			"content": "**Czas trwania:** {length}\n**Żądany przez:** <@{requester}>\n**Link:** [Kliknij tutaj]({uri})",
 			"check_dm": "Sprawdź swoje DM.",
 			"dm_failed": "Nie mogłem wysłać ci wiadomości na DM."
 		},
@@ -264,7 +264,7 @@
 		"nowplaying": {
 			"description": "Pokazuje aktualnie odtwarzany utwór",
 			"now_playing": "Teraz odtwarzane",
-			"track_info": "[{title}]({uri}) - Żądany przez: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Żądany przez: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Wstrzymuje aktualnie odtwarzany utwór",
@@ -302,9 +302,9 @@
 		},
 		"queue": {
 			"description": "Pokazuje aktualną kolejkę",
-			"now_playing": "Teraz odtwarzane: [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"now_playing": "Teraz odtwarzane: [{title}]({uri}) - Żądany przez: <@{requester}> - Czas trwania: {duration}",
 			"live": "NA ŻYWO",
-			"track_info": "{index}. [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Żądany przez: <@{requester}> - Czas trwania: {duration}",
 			"title": "Bieżąca kolejka",
 			"page_info": "Strona {index} z {total}"
 		},
@@ -349,7 +349,7 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania utworu."
 			},
 			"messages": {
-				"added_to_queue": "Dodano utwór [{{title}}]({{uri}}) do kolejki."
+				"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki."
 			}
 		},
 		"seek": {
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Teraz odtwarzane",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Żądany przez <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Żądany przez <@{requester}>",
 			"error_searching": "Wystąpił błąd podczas wyszukiwania.",
 			"no_results": "Nie znaleziono żadnych wyników.",
 			"nothing_playing": "Obecnie nic nie jest odtwarzane",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "Aby używać tych przycisków, musisz być połączony z {channel}.",
 			"now_playing": "Teraz odtwarzane",
 			"live": "NA ŻYWO",
-			"requested_by": "Żądany przez {requester}",
+			"requested_by": "Żądany przez <@{requester}>",
 			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
 			"volume_set": "Głośność utoru została ustawiona na {vol}%.",
 			"volume_footer": "Głośność: {vol}%",
@@ -601,7 +601,7 @@
 			"no_music_to_skip": "Nie ma muzyki, którą można by pominąć.",
 			"skipped": "Pominięto muzykę.",
 			"skipped_footer": "Pominięty przez {displayName}",
-			"stopped": "Zatrzymano muzykę.",
+			"stopped": "Zatrzymano muzykę",
 			"stopped_footer": "Zatrzymany przez {displayName}",
 			"nothing_playing": "Obecnie nic nie jest odtwarzane.",
 			"loop_set": "Zapętlenie ustawione na {loop}.",

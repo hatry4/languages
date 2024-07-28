@@ -240,7 +240,7 @@
 		},
 		"grab": {
 			"description": "Aapke DM par chal rahe song ko grab karta hai",
-			"content": "**Aawadhi:** {length}\n**Anurodh karta:** {requester}\n**Link:** [Yahan click karein]({uri})",
+			"content": "**Aawadhi:** {length}\n**Anurodh karta:** <@{requester}>\n**Link:** [Yahan click karein]({uri})",
 			"check_dm": "Kripya apna DM check karein.",
 			"dm_failed": "Main aapko DM nahin bhej saka."
 		},
@@ -264,7 +264,7 @@
 		"nowplaying": {
 			"description": "Abhi chal rahe song ko dhakeye",
 			"now_playing": "Abhi Chal Raha Hai",
-			"track_info": "[{title}]({uri}) - Anurodh karta: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Anurodh karta: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Mojuda song ko pause karein",
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Abhi Chal Raha Hai",
-			"description": "{author} dwara [{title}]({uri}) • `[${length}]` - <@{requester}> dwara anurodh kiya gaya",
+			"description": "{author} dwara [{title}]({uri}) • `[{length}]` - <@{requester}> dwara anurodh kiya gaya",
 			"error_searching": "Khojte samay ek error aaya.",
 			"no_results": "Koi result nahin mila.",
 			"nothing_playing": "Abhi kuchh bhi play nahin ho raha hai.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "In buttons ka upyog karne ke liye aap {channel} se nahin जुड़े हैं.",
 			"now_playing": "Abhi Chal Raha Hai",
 			"live": "LIVE",
-			"requested_by": "{requester} dwara anurodh kiya गया",
+			"requested_by": "<@{requester}> dwara anurodh kiya गया",
 			"no_dj_permission": "Is command ka upyog karne ke liye aapke paas DJ role hone ki jaroorat hai.",
 			"volume_set": "Volume {vol}% par set कर दिया गया है",
 			"volume_footer": "Volume: {vol}%",

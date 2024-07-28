@@ -227,7 +227,7 @@
 		},
 		"grab": {
 			"description": "Holt den aktuell abgespielten Song in deine DM",
-			"content": "**Dauer:** {length}\n**Angefordert von:** {requester}\n**Link:** [Klicke hier]({uri})",
+			"content": "**Dauer:** {length}\n**Angefordert von:** <@{requester}>\n**Link:** [Klicke hier]({uri})",
 			"check_dm": "Bitte überprüfe deine DM.",
 			"dm_failed": "Ich konnte dir keine DM senden."
 		},
@@ -251,7 +251,7 @@
 		"nowplaying": {
 			"description": "Zeigt den aktuell abgespielten Song an",
 			"now_playing": "Jetzt wird abgespielt",
-			"track_info": "[{title}]({uri}) - Angefordert von: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Angefordert von: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Pausiert den aktuellen Song",
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
 			"error_searching": "There was an error while searching.",
 			"no_results": "There were no results found.",
 			"nothing_playing": "Nothing playing right now.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "Du bist nicht mit {channel} verbunden, um diese Buttons zu verwenden.",
 			"now_playing": "Jetzt wird abgespielt",
 			"live": "LIVE",
-			"requested_by": "Angefordert von {requester}",
+			"requested_by": "Angefordert von <@{requester}>",
 			"no_dj_permission": "Du musst die DJ-Rolle haben, um diesen Befehl zu verwenden.",
 			"volume_set": "Lautstärke auf {vol}% gesetzt",
 			"volume_footer": "Lautstärke: {vol}%",
