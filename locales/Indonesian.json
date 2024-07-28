@@ -533,7 +533,7 @@
         },
         "setupStart": {
             "now_playing": "Now Playing",
-            "description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by {requester}",
+            "description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
             "error_searching": "There was an error while searching.",
             "no_results": "There were no results found.",
             "nothing_playing": "Nothing playing right now.",
