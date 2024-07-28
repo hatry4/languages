@@ -109,7 +109,6 @@
 				"info": "Shows the song request channel"
 			}
 		},
-
 		"8d": {
 			"description": "on/off 8d filter",
 			"messages": {
@@ -213,7 +212,6 @@
 				"disabled": "`✅` | Vibrato filter has been `DISABLED`."
 			}
 		},
-
 		"autoplay": {
 			"description": "Toggles autoplay",
 			"messages": {
@@ -397,7 +395,6 @@
 				"set": "Set the volume to {volume}"
 			}
 		},
-
 		"addsong": {
 			"description": "Adds a song to the playlist",
 			"options": {
@@ -560,7 +557,6 @@
 			"cooldown": "Please wait {time} more second(s) before reusing the `{command}` command.",
 			"no_mention_everyone": "You can't use this command with everyone or here.",
 			"error": "An error occurred: `{error}`",
-
 			"no_voice_channel_queue": "You are not connected to a voice channel to queue songs.",
 			"no_permission_connect_speak": "I don't have enough permission to connect/speak in <#{channel}>.",
 			"different_voice_channel_queue": "You are not connected to <#{channel}> to queue songs."
