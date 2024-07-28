@@ -1,14 +1,14 @@
 {
 	"cmd": {
 		"247": {
-			"description": "Set the bot to stay in the voice channel",
+			"description": "봇이 음성 채널에서 나가지 않도록 설정해요",
 			"errors": {
-				"not_in_voice": "You need to be in a voice channel to use this command.",
-				"generic": "An error occurred while trying to execute this command."
+				"not_in_voice": "이 명령어를 사용하려면 음성 채널에 접속해주세요.",
+				"generic": "이 명령어를 실행하는 도중 오류가 발생했습니다."
 			},
 			"messages": {
-				"disabled": "`✅` | 24/7 mode has been `DISABLED`",
-				"enabled": "`✅` | 24/7 mode has been `ENABLED`. \n**The bot will not leave the voice channel even if there are no people in the voice channel.**"
+				"disabled": "`✅` | 24/7 모드가 `비활성화되었습니다.`",
+				"enabled": "`✅` | 24/7 모드가 `활성화되었습니다`. \n**봇은 이제부터 음성 채널에서 나가지 않습니다. 사람이 아무도 없더라도 말이죠.**"
 			}
 		},
 		"ping": {
