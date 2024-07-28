@@ -12,11 +12,13 @@
 - [x] English (US) - `EnglishUS.json` (Default)
 - [x] Hindi - `Hindi.json` [by @Appujet](https://github.com/Appujet)
 - [x] Spanish (ES) - `SpanishES.json` [by @LucasB25](https://github.com/LucasB25)
-- [ ] Korean - `Korean.json` (In Progress)
 - [x] Portuguese (PT) - `PortuguesePT.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] Polish - `Polish.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] French - `French.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] German - `German.json` [by @LucasB25](https://github.com/LucasB25)
+- [x] Russian - `Russian.json` [by @LucasB25](https://github.com/LucasB25)
+
+- [ ] Korean - `Korean.json` (In Progress)
 
 - [ ] Indonesian - `Indonesian.json` (Not Started)
 - [ ] English (GB) - `EnglishGB.json` (Not Started)
@@ -36,7 +38,6 @@
 - [ ] Norwegian - `Norwegian.json` (Not Started)
 - [ ] Portuguese (BR) - `PortugueseBR.json` (Not Started)
 - [ ] Romanian - `Romanian.json` (Not Started)
-- [ ] Russian - `Russian.json` (Not Started)
 - [ ] Swedish - `Swedish.json` (Not Started)
 - [ ] Thai - `Thai.json` (Not Started)
 - [ ] Turkish - `Turkish.json` (Not Started)
