@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Teraz odtwarzane",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Żądany przez @{requester}",
+			"description": "[{title}]({uri}) by {author} • `[${length}]` - Żądany przez <@{requester}>",
 			"error_searching": "Wystąpił błąd podczas wyszukiwania.",
 			"no_results": "Nie znaleziono żadnych wyników.",
 			"nothing_playing": "Obecnie nic nie jest odtwarzane",
