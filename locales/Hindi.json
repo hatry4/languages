@@ -530,6 +530,17 @@
 			"looping_by": "{user} dwara looping",
 			"looping_queue_by": "{user} dwara queue looping",
 			"looping_off_by": "{user} dwara looping band"
+		},
+		"setupStart": {
+			"now_playing": "Abhi Chal Raha Hai",
+			"description": "{author} dwara [{title}]({uri}) • `[${length}]` - {requester} dwara anurodh kiya gaya",
+			"error_searching": "Khojte samay ek error aaya.",
+			"no_results": "Koi result nahin mila.",
+			"nothing_playing": "Abhi kuchh bhi play nahin ho raha hai.",
+			"queue_too_long": "Queue bahut lambi hai. Adhiktam lambai {maxQueueSize} songs hai.",
+			"playlist_too_long": "Playlist bahut lambi hai. Adhiktam lambai {maxPlaylistSize} songs hai.",
+			"added_to_queue": "[{title}]({uri}) ko queue mein jod diya gaya है.",
+			"added_playlist_to_queue": "Playlist se [{length}] songs ko queue mein jod diya gaya है."
 		}
 	},
 	"event": {
