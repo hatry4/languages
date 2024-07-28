@@ -10,7 +10,7 @@
 ### 📚 Available Translations
 
 - [x] English (US) - `EnglishUS.json` (Default)
-- [ ] Hindi - `Hindi.json` [by @Appujet](https://github.com/Appujet)
+- [x] Hindi - `Hindi.json` [by @Appujet](https://github.com/Appujet)
 - [x] Spanish (ES) - `SpanishES.json` [by @LucasB25](https://github.com/LucasB25)
 - [ ] Korean - `Korean.json` (In Progress)
 - [x] Portuguese (PT) - `PortuguesePT.json` [by @LucasB25](https://github.com/LucasB25)
