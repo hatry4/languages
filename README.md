@@ -13,7 +13,7 @@
 - [ ] Hindi - `Hindi.json` (In Progress)
 - [x] Spanish (ES) - `SpanishES.json` [by @LucasB25](https://github.com/LucasB25)
 - [ ] Korean - `Korean.json` (In Progress)
-- [ ] Portuguese (PT) - `PortuguesePT.json` (In Progress)
+- [x] Portuguese (PT) - `PortuguesePT.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] Polish - `Polish.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] French - `French.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] German - `German.json` [by @LucasB25](https://github.com/LucasB25)
