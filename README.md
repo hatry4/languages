@@ -14,8 +14,8 @@
 - [ ] Korean - `Korean.json` (In Progress)
 - [ ] Portuguese (PT) - `PortuguesePT.json` (In Progress)
 - [ ] Polish - `Polish.json` (In Progress)
-- [x] French - `French.json`
-- [x] German - `German.json`
+- [x] French - `French.json` [by @LucasB25](https://github.com/LucasB25)
+- [x] German - `German.json` [by @LucasB25](https://github.com/LucasB25)
 
 
 ## 📝 Translation JSON Structure
