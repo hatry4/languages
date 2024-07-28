@@ -79,7 +79,9 @@
 			"description": "Bot ke liye bhasha set karein",
 			"invalid_language": "Kripya ek valid bhasha प्रदान करें. Udaharan: English (United States) ke liye `EnglishUS`\n\nAap supported bhashaon ki सूची [yahan](https://discord.com/developers/docs/reference#locales) dekh sakte hain\n\n**Uplabdh Bhashayen:**\n{languages}",
 			"already_set": "Bhasha pehle se hi `{language}` par set hai",
+			"not_set": "Bhasha `{language}` par set nahin hai",
 			"set": "`✅` | Bhasha `{language}` par set kar di गई है",
+			"reset": "`✅` | Bhasha ko default bhasha mein reset kar diya gaya hai",
 			"options": {
 				"set": "Bot ke liye bhasha set karein",
 				"language": "Woh bhasha jise aap set karna chahte hain",
@@ -605,5 +607,9 @@
 			"forward_footer": "{displayName} dwara forward kiya गया",
 			"button_not_available": "Yeh button uplabdh nahin hai."
 		}
-	}
+	},
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot"
 }

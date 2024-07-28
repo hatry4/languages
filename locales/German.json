@@ -486,7 +486,9 @@
 			"description": "Legt die Sprache für den Bot fest",
 			"invalid_language": "Bitte gib eine gültige Sprache an. Beispiel: `EnglishUS` für Englisch (Vereinigte Staaten)\n\nDie Liste der unterstützten Sprachen findest du [hier](https://discord.com/developers/docs/reference#locales)\n\n**Verfügbare Sprachen:**\n{languages}",
 			"already_set": "Die Sprache ist bereits auf `{language}` gesetzt",
+			"not_set": "Die Sprache wurde nicht festgelegt",
 			"set": "`✅` | Die Sprache wurde auf `{language}` gesetzt",
+			"reset": "`✅` | Die Sprache wurde auf die Standardsprache zurückgesetzt",
 			"options": {
 				"set": "Legt die Sprache für den Bot fest",
 				"language": "Die Sprache, die du einstellen möchtest",
@@ -605,5 +607,9 @@
 			"forward_footer": "Vorgespult von {displayName}",
 			"button_not_available": "Dieser Button ist nicht verfügbar."
 		}
-	}
+	},
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot"
 }

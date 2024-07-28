@@ -486,7 +486,9 @@
 			"description": "Ustaw język dla bota",
 			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla języka angielskiego (Stany Zjednoczone)\n\nLista obsługiwanych języków znajduje się [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
 			"already_set": "Język bota jest już ustawiony na `{language}`.",
+			"not_set": "Język bota nie jest jeszcze ustawiony.",
 			"set": "`✅` | Język bota został pomyślnie ustawiony na `{language}`.",
+			"reset": "`✅` | Język bota został zresetowany do domyślnego.",
 			"options": {
 				"set": "Ustaw język dla bota",
 				"language": "Język, który chcesz ustawić",
@@ -605,5 +607,9 @@
 			"forward_footer": "Przesunięty do przodu przez {displayName}",
 			"button_not_available": "Ten przycisk jest niedostępny."
 		}
-	}
+	},
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot"
 }

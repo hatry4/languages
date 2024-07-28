@@ -79,7 +79,9 @@
 			"description": "Установить язык для бота",
 			"invalid_language": "Пожалуйста, укажите допустимый язык.  Пример: `EnglishUS` для английского (США)\n\nВы можете найти список поддерживаемых языков [здесь](https://discord.com/developers/docs/reference#locales)\n\n**Доступные языки:**\n{languages}",
 			"already_set": "Язык уже установлен на `{language}`",
+			"not_set": "Язык не установлен.",
 			"set": "`✅` | Язык был установлен на `{language}`",
+			"reset": "`✅` | Язык был сброшен на язык по умолчанию",
 			"options": {
 				"set": "Установить язык для бота",
 				"language": "Язык, который вы хотите установить",
@@ -605,5 +607,9 @@
 			"forward_footer": "Перемотано вперед {displayName}",
 			"button_not_available": "Эта кнопка недоступна."
 		}
-	}
+	},
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot"
 }

@@ -486,7 +486,9 @@
 			"description": "Define a língua do bot",
 			"invalid_language": "Por favor, forneça uma língua válida. Exemplo: `EnglishUS` para inglês (Estados Unidos)\n\nPode encontrar a lista de línguas suportadas [aqui](https://discord.com/developers/docs/reference#locales)\n\n**Línguas disponíveis:**\n{languages}",
 			"already_set": "A língua já está definida para `{language}`",
+			"not_set": "A língua não está definida.",
 			"set": "`✅` | A língua foi definida para `{language}`",
+			"reset": "`✅` | A língua foi redefinida para a língua predefinida",
 			"options": {
 				"set": "Define a língua do bot",
 				"language": "A língua que deseja definir",

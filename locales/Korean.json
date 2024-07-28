@@ -7,36 +7,36 @@
 				"generic": "An error occurred while trying to execute this command."
 			},
 			"messages": {
-				"disabled": "**24/7 mode has been disabled**",
-				"enabled": "**24/7 mode has been `ENABLED`. \nThe bot will not leave the voice channel even if there are no people in the voice channel.**"
+				"disabled": "`✅` | 24/7 mode has been `DISABLED`",
+				"enabled": "`✅` | 24/7 mode has been `ENABLED`. \n**The bot will not leave the voice channel even if there are no people in the voice channel.**"
 			}
 		},
 		"ping": {
-			"description": "봇의 핑을 보여줘요.",
-			"content": "핑...",
-			"bot_latency": "봇 지연 시간",
-			"api_latency": "API 지연 시간",
-			"requested_by": "{author}님이 요청함"
+			"description": "Shows the bot's ping.",
+			"content": "Pinging...",
+			"bot_latency": "Bot Latency",
+			"api_latency": "API Latency",
+			"requested_by": "Requested by {author}"
 		},
 		"lavalink": {
-			"description": "현재 Lavalink 통계를 보여줘요.",
-			"title": "Lavalink 통계",
-			"content": "플레이어: {players}\n활성 플레이어: {playingPlayers}\n업타임: {uptime}\n코어: {cores} 코어\n메모리 사용량: {used} / {reservable}\n시스템 부하: {systemLoad}%\nLavalink 부하: {lavalinkLoad}%"
+			"description": "Shows the current Lavalink stats.",
+			"title": "Lavalink Stats",
+			"content": "Player: {players}\nPlaying Players: {playingPlayers}\nUptime: {uptime}\nCores: {cores} Core(s)\nMemory Usage: {used} / {reservable}\nSystem Load: {systemLoad}%\nLavalink Load: {lavalinkLoad}%"
 		},
 		"invite": {
-			"description": "봇 초대 링크를 가져와요.",
-			"content": "아래 버튼을 클릭하여 저를 초대할 수 있어요. 버그나 중단 문제가 있나요? 서포트 서버에 참여하세요!"
+			"description": "Get the bot invite link.",
+			"content": "You can invite me by clicking the button below. Any bugs or outages? Join the support server!"
 		},
 		"help": {
-			"description": "도움말 메뉴를 보여줘요.",
+			"description": "Shows the help menu.",
 			"options": {
-				"command": "정보를 얻고 싶은 명령어"
+				"command": "The command you want to get info on"
 			},
-			"content": "안녕하세요! 저는 [Lavamusic](https://github.com/appujet/lavamusic)과 Discord로 만들어진 {bot} 음악 봇이에요. `{prefix}help <command>`를 사용하여 명령어에 대한 자세한 정보를 얻을 수 있어요.",
-			"title": "도움말 메뉴",
-			"not_found": "`{cmdName}` 명령어는 존재하지 않네요.",
-			"help_cmd": "**설명:** {description}\n**사용법:** {usage}\n**예시:** {examples}\n**별칭:** {aliases}\n**카테고리:** {category}\n**쿨다운:** {cooldown} 초\n**권한:** {premUser}\n**봇 권한:** {premBot}\n**개발자 전용:** {dev}\n**슬래시 명령어:** {slash}\n**인수:** {args}\n**플레이어:** {player}\n**DJ:** {dj}\n**DJ 권한:** {djPerm}\n**음성:** {voice}",
-			"footer": "명령어에 대한 자세한 정보를 얻으려면 {prefix}help <command>를 사용하세요."
+			"content": "Hey there! I'm {bot}, a music bot made with [Lavamusic](https://github.com/appujet/lavamusic) and Discord. You can use `{prefix}help <command>` to get more info on a command.",
+			"title": "Help Menu",
+			"not_found": "This `{cmdName}` command does not exist.",
+			"help_cmd": "**Description:** {description}\n**Usage:** {usage}\n**Examples:** {examples}\n**Aliases:** {aliases}\n**Category:** {category}\n**Cooldown:** {cooldown} seconds\n**Permissions:** {premUser}\n**Bot Permissions:** {premBot}\n**Developer Only:** {dev}\n**Slash Command:** {slash}\n**Args:** {args}\n**Player:** {player}\n**DJ:** {dj}\n**DJ Permissions:** {djPerm}\n**Voice:** {voice}",
+			"footer": "Use {prefix}help <command> for more info on a command"
 		},
 		"botinfo": {
 			"description": "Information about the bot",
@@ -74,6 +74,19 @@
 				"role": "The DJ role"
 			},
 			"subcommands": "Subcommands"
+		},
+		"language": {
+			"description": "Set the language for the bot",
+			"invalid_language": "Please provide a valid language. Example: `EnglishUS` for English (United States)\n\nYou can find the list of supported languages [here](https://discord.com/developers/docs/reference#locales)\n\n**Available Languages:**\n{languages}",
+			"already_set": "The language is already set to `{language}`",
+			"not_set": "The language is not set.",
+			"set": "`✅` | The language has been set to `{language}`",
+			"reset": "`✅` | The language has been reset to the default language.",
+			"options": {
+				"set": "Set the language for the bot",
+				"language": "The language you want to set",
+				"reset": "Change the language back to the default language"
+			}
 		},
 		"prefix": {
 			"description": "Shows or sets the bot's prefix",
@@ -119,7 +132,7 @@
 		"bassboost": {
 			"description": "on/off bassboost filter",
 			"messages": {
-				"filter_enabled": "`✅` | Bassboost filter has been `ENABLED`. **Be careful, listening too loudly can damage your hearing!**",
+				"filter_enabled": "`✅` | Bassboost filter has been `ENABLED`. \n**Be careful, listening too loudly can damage your hearing!**",
 				"filter_disabled": "`✅` | Bassboost filter has been `DISABLED`."
 			}
 		},
@@ -160,7 +173,7 @@
 				"invalid_number": "Please provide a valid number between 0.5 and 5."
 			},
 			"messages": {
-				"pitch_set": "`✅` | Pitch has been set to {pitch}."
+				"pitch_set": "`✅` | Pitch has been set to **{pitch}**."
 			}
 		},
 		"rate": {
@@ -172,7 +185,7 @@
 				"invalid_number": "Please provide a valid number between 0.5 and 5."
 			},
 			"messages": {
-				"rate_set": "`✅` | Rate has been set to {rate}."
+				"rate_set": "`✅` | Rate has been set to **{rate}**."
 			}
 		},
 		"reset": {
@@ -195,7 +208,7 @@
 			},
 			"messages": {
 				"invalid_number": "Please provide a valid number between 0.5 and 5.",
-				"set_speed": "`✅` | Speed has been set to {speed}."
+				"set_speed": "`✅` | Speed has been set to **{speed}**."
 			}
 		},
 		"tremolo": {
@@ -481,13 +494,6 @@
 				"playlist_stolen": "Successfully stole the playlist `{playlist}` from {user}.",
 				"error_occurred": "An error occurred while stealing the playlist."
 			}
-		},
-		"language": {
-			"description": "cmd.language.description",
-			"options": {
-				"set": "cmd.language.options.set",
-				"reset": "cmd.language.options.reset"
-			}
 		}
 	},
 	"buttons": {
@@ -601,5 +607,9 @@
 			"forward_footer": "Forwarded by {displayName}",
 			"button_not_available": "This button is not available."
 		}
-	}
+	},
+	"Evaluate code": "Evaluate code",
+	"Leave a guild": "Leave a guild",
+	"List all guilds the bot is in": "List all guilds the bot is in",
+	"Restart the bot": "Restart the bot"
 }
