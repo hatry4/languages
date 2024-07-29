@@ -616,7 +616,8 @@
 			"forward_limit": "Вы не можете перемотать музыку вперед больше, чем длина песни.",
 			"forwarded": "Музыка перемотана вперед.",
 			"forward_footer": "Перемотано вперед {displayName}",
-			"button_not_available": "Эта кнопка недоступна."
+			"button_not_available": "Эта кнопка недоступна.",
+			"no_music_playing": "Сейчас ничего не играет."
 		}
 	},
 	"Evaluate code": "Evaluate code",

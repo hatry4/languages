@@ -616,7 +616,8 @@
 			"forward_limit": "Nie można przesunąć muzyki do przodu o więcej niż długość utworu.",
 			"forwarded": "Przesunięto muzykę do przodu.",
 			"forward_footer": "Przesunięty do przodu przez {displayName}",
-			"button_not_available": "Ten przycisk jest niedostępny."
+			"button_not_available": "Ten przycisk jest niedostępny.",
+			"no_music_playing": "Na tym serwerze nie jest odtwarzana obecnie żadna muzyka."
 		}
 	},
 	"Evaluate code": "Ocena kodu",

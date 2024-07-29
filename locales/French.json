@@ -616,7 +616,8 @@
 			"forward_limit": "Vous ne pouvez pas avancer la musique plus que la longueur de la chanson.",
 			"forwarded": "Musique avancée.",
 			"forward_footer": "Avancé par {displayName}",
-			"button_not_available": "Ce bouton n'est pas disponible."
+			"button_not_available": "Ce bouton n'est pas disponible.",
+			"no_music_playing": "Rien ne joue en ce moment."
 		}
 	},
 	"Evaluate code": "Evaluate code",

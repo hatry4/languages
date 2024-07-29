@@ -616,7 +616,8 @@
 			"forward_limit": "You cannot forward the music more than the length of the song.",
 			"forwarded": "Forwarded the music.",
 			"forward_footer": "Forwarded by {displayName}",
-			"button_not_available": "This button is not available."
+			"button_not_available": "This button is not available.",
+			"no_music_playing": "There is no music playing in this server."
 		}
 	},
 	"Evaluate code": "Evaluate code",

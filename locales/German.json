@@ -616,7 +616,8 @@
 			"forward_limit": "Du kannst die Musik nicht mehr als die Länge des Songs vorspulen.",
 			"forwarded": "Musik vorgespult.",
 			"forward_footer": "Vorgespult von {displayName}",
-			"button_not_available": "Dieser Button ist nicht verfügbar."
+			"button_not_available": "Dieser Button ist nicht verfügbar.",
+			"no_music_playing": "Es wird gerade nichts abgespielt."
 		}
 	},
 	"Evaluate code": "Evaluate code",

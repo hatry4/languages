@@ -616,7 +616,8 @@
 			"forward_limit": "Aap music ko song ki lambai se zyada forward nahin kar sakte.",
 			"forwarded": "Music ko forward कर diya गया है.",
 			"forward_footer": "{displayName} dwara forward kiya गया",
-			"button_not_available": "Yeh button uplabdh nahin hai."
+			"button_not_available": "Yeh button uplabdh nahin hai.",
+			"no_music_playing": "Abhi kuchh bhi play nahin ho raha hai."
 		}
 	},
 	"Evaluate code": "Evaluate code",
