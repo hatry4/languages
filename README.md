@@ -18,7 +18,6 @@
 - [x] German - `German.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] Russian - `Russian.json` [by @LucasB25](https://github.com/LucasB25)
 - [x] Japanese - `Japanese.json` [by @Naig](https://github.com/hatry4)
-- [x] Filipino - `Filipino.json` [by @Naig](https://github.com/hatry4)
 
 - [ ] Korean - `Korean.json` (In Progress)
 
