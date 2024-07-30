@@ -64,7 +64,7 @@
 				"role_not_found": "Rola DJ <@&{roleId}> nie została dodana.",
 				"role_removed": "Rola DJ <@&{roleId}> została pomyślnie usunięta.",
 				"all_roles_cleared": "Wszystkie role DJ zostały pomyślnie usunięte.",
-				"toggle": "Tryb DJ został przełączony na {status}."
+				"toggle": "Tryb DJ został pomyślnie przełączony na {status}."
 			},
 			"options": {
 				"add": "Rola DJ, którą chcesz dodać",
@@ -74,6 +74,19 @@
 				"role": "Rola DJ"
 			},
 			"subcommands": "Subkomenda"
+		},
+		"language": {
+			"description": "Ustaw język dla bota",
+			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla języka angielskiego (Stany Zjednoczone)\n\nLista obsługiwanych języków znajduje się [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
+			"already_set": "Język bota jest już ustawiony na `{language}`.",
+			"not_set": "Język bota nie jest jeszcze ustawiony.",
+			"set": "`✅` | Język bota został pomyślnie ustawiony na `{language}`.",
+			"reset": "`✅` | Język bota został pomyślnie zresetowany do domyślnego.",
+			"options": {
+				"set": "Ustaw język dla bota",
+				"language": "Język, który chcesz ustawić",
+				"reset": "Zmień język z powrotem na domyślny"
+			}
 		},
 		"prefix": {
 			"description": "Pokazuje lub ustawia prefiks bota",
@@ -94,19 +107,19 @@
 		"setup": {
 			"description": "Konfiguruje bota",
 			"errors": {
-				"channel_exists": "Kanał żądanań utworu już istnieje.",
-				"channel_not_exists": "Kanał żądanań utworu nie istnieje.",
-				"channel_delete_fail": "Kanał żądanań utworu został usunięty. Jeśli kanał nie zostanie usunięty samoistnie, usuń go samodzielnie."
+				"channel_exists": "Kanał żądań utworu już istnieje.",
+				"channel_not_exists": "Kanał żądań utworu nie istnieje.",
+				"channel_delete_fail": "Wystąpił błąd podczas usuwania kanału żądań."
 			},
 			"messages": {
-				"channel_created": "Kanał żądanań utworu został utworzony i jest nim <#{channelId}>.",
-				"channel_deleted": "Kanał żądanań utworu został pomyślnie usunięty.",
-				"channel_info": "Kanałem żądanań utworu jest <#{channelId}>."
+				"channel_created": "Kanał żądań utworu został utworzony i jest nim <#{channelId}>.",
+				"channel_deleted": "Kanał żądań utworu został pomyślnie usunięty. Jeśli kanał nie zostanie usunięty samoistnie, usuń go samodzielnie.",
+				"channel_info": "Kanałem żądań utworu jest <#{channelId}>."
 			},
 			"options": {
-				"create": "Tworzy kanał żądanań utworu",
-				"delete": "Usuwa kanał żądanań utworu",
-				"info": "Pokazuje kanał żądanań utworu"
+				"create": "Tworzy kanał żądań utworu",
+				"delete": "Usuwa kanał żądań utworu",
+				"info": "Pokazuje kanał żądań utworu"
 			}
 		},
 		"8d": {
@@ -227,7 +240,7 @@
 		},
 		"grab": {
 			"description": "Wysyła aktualnie odtwarzany utwór na DM",
-			"content": "**Czas trwania:** {length}\n**Żądany przez:** {requester}\n**Link:** [Kliknij tutaj]({uri})",
+			"content": "**Czas trwania:** {length}\n**Żądany przez:** <@{requester}>\n**Link:** [Kliknij tutaj]({uri})",
 			"check_dm": "Sprawdź swoje DM.",
 			"dm_failed": "Nie mogłem wysłać ci wiadomości na DM."
 		},
@@ -250,8 +263,8 @@
 		},
 		"nowplaying": {
 			"description": "Pokazuje aktualnie odtwarzany utwór",
-			"now_playing": "Teraz odtwarzany",
-			"track_info": "[{title}]({uri}) - Żądany przez: {requester}\n\n`{bar}`"
+			"now_playing": "Teraz odtwarzane",
+			"track_info": "[{title}]({uri}) - Żądany przez: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Wstrzymuje aktualnie odtwarzany utwór",
@@ -267,7 +280,7 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
 				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
+				"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów."
 			},
 			"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki.",
 			"added_playlist_to_queue": "Dodano {length} utworów do kolejki."
@@ -282,16 +295,16 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania.",
 				"no_results": "Nie znaleziono żadnych rezultatów.",
 				"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
-				"playlist_too_long": "Lista odtwarzania jest zbyt długa. Maksymalna długość listy to {maxPlaylistSize} utworów."
+				"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów."
 			},
 			"added_to_play_next": "Dodano utwór [{title}]({uri}) do odtworzenia jako następny w kolejce.",
 			"added_playlist_to_play_next": "Dodano {length} utworów do odtworzenia jako następne w kolejce."
 		},
 		"queue": {
 			"description": "Pokazuje aktualną kolejkę",
-			"now_playing": "Teraz odtwarzany: [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"now_playing": "Teraz odtwarzane: [{title}]({uri}) - Żądany przez: <@{requester}> - Czas trwania: {duration}",
 			"live": "NA ŻYWO",
-			"track_info": "{index}. [{title}]({uri}) - Żądany przez: {requester} - Czas trwania: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Żądany przez: <@{requester}> - Czas trwania: {duration}",
 			"title": "Bieżąca kolejka",
 			"page_info": "Strona {index} z {total}"
 		},
@@ -336,7 +349,7 @@
 				"search_error": "Wystąpił błąd podczas wyszukiwania utworu."
 			},
 			"messages": {
-				"added_to_queue": "Dodano utwór [{{title}}]({{uri}}) do kolejki."
+				"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki."
 			}
 		},
 		"seek": {
@@ -481,19 +494,6 @@
 				"playlist_stolen": "Pomyślnie skradziono playlistę `{playlist}` od {user}.",
 				"error_occurred": "Wystąpił błąd podczas kradzieży playlisty."
 			}
-		},
-		"language": {
-			"description": "Ustaw język dla bota",
-			"invalid_language": "Podaj prawidłowy język. Przykład: `EnglishUS` dla języka angielskiego (Stany Zjednoczone)\n\nLista obsługiwanych języków znajduje się [tutaj](https://discord.com/developers/docs/reference#locales)\n\n**Dostępne języki:**\n{languages}",
-			"already_set": "Język bota jest już ustawiony na `{language}`.",
-			"not_set": "Język bota nie jest jeszcze ustawiony.",
-			"set": "`✅` | Język bota został pomyślnie ustawiony na `{language}`.",
-			"reset": "`✅` | Język bota został zresetowany do domyślnego.",
-			"options": {
-				"set": "Ustaw język dla bota",
-				"language": "Język, który chcesz ustawić",
-				"reset": "Zmień język z powrotem na domyślny"
-			}
 		}
 	},
 	"buttons": {
@@ -515,7 +515,7 @@
 			"already_paused": "Utwór jest już wstrzymany."
 		},
 		"trackStart": {
-			"now_playing": "Teraz odtwarzany",
+			"now_playing": "Teraz odtwarzane",
 			"requested_by": "Żądany przez {user}",
 			"duration": "Czas trwania",
 			"author": "Autor",
@@ -532,15 +532,15 @@
 			"looping_off_by": "Zapętlenie wyłączone przez {user}"
 		},
 		"setupStart": {
-			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
-			"error_searching": "There was an error while searching.",
-			"no_results": "There were no results found.",
-			"nothing_playing": "Nothing playing right now.",
-			"queue_too_long": "The queue is too long. The maximum length is {maxQueueSize} songs.",
-			"playlist_too_long": "The playlist is too long. The maximum length is {maxPlaylistSize} songs.",
-			"added_to_queue": "Added [{title}]({uri}) to the queue.",
-			"added_playlist_to_queue": "Added [{length}] songs from the playlist to the queue."
+			"now_playing": "Teraz odtwarzane",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Żądany przez <@{requester}>",
+			"error_searching": "Wystąpił błąd podczas wyszukiwania.",
+			"no_results": "Nie znaleziono żadnych wyników.",
+			"nothing_playing": "Obecnie nic nie jest odtwarzane",
+			"queue_too_long": "Kolejka jest zbyt długa. Maksymalna długość kolejki to {maxQueueSize} utworów.",
+			"playlist_too_long": "Playlista jest zbyt długa. Maksymalna długość playlisty to {maxPlaylistSize} utworów.",
+			"added_to_queue": "Dodano utwór [{title}]({uri}) do kolejki.",
+			"added_playlist_to_queue": "Dodano {length} utworów do kolejki."
 		}
 	},
 	"event": {
@@ -586,29 +586,29 @@
 			"different_voice_channel_queue": "Aby dodawać utwory do kolejki, musisz być połączony z <#{channel}.>"
 		},
 		"setupButton": {
-			"no_voice_channel_button": "Aby użyć tego przycisku, musisz być połączony z kanałem głosowym",
-			"different_voice_channel_button": "Aby używać tych przycisków, musisz być połączony z {channel}",
-			"now_playing": "Teraz odtwarzany",
+			"no_voice_channel_button": "Aby użyć tego przycisku, musisz być połączony z kanałem głosowym.",
+			"different_voice_channel_button": "Aby używać tych przycisków, musisz być połączony z {channel}.",
+			"now_playing": "Teraz odtwarzane",
 			"live": "NA ŻYWO",
-			"requested_by": "Żądany przez {requester}",
+			"requested_by": "Żądany przez <@{requester}>",
 			"no_dj_permission": "Musisz mieć rolę DJ, aby użyć tej komendy.",
-			"volume_set": "Głośność utoru została ustawiona na {vol}%",
+			"volume_set": "Głośność utoru została ustawiona na {vol}%.",
 			"volume_footer": "Głośność: {vol}%",
 			"paused": "Wstrzymano",
 			"resumed": "Wznowiono",
-			"pause_resume": "{name} muzykę.",
+			"pause_resume": "{name} muzykę",
 			"pause_resume_footer": "{name} przez {displayName}",
 			"no_music_to_skip": "Nie ma muzyki, którą można by pominąć.",
 			"skipped": "Pominięto muzykę.",
 			"skipped_footer": "Pominięty przez {displayName}",
-			"stopped": "Zatrzymano muzykę.",
+			"stopped": "Zatrzymano muzykę",
 			"stopped_footer": "Zatrzymany przez {displayName}",
-			"nothing_playing": "Nic nie jest teraz odtwarzane",
+			"nothing_playing": "Obecnie nic nie jest odtwarzane.",
 			"loop_set": "Zapętlenie ustawione na {loop}.",
 			"loop_footer": "Zapętlenie ustawione na {loop} przez {displayName}",
 			"shuffled": "Potasowano kolejkę.",
 			"no_previous_track": "Nie ma żadnego poprzedniego utworu.",
-			"playing_previous": "Odtwarzanie poprzedniego utworu.",
+			"playing_previous": "Odtwarzanie poprzedniego utworu",
 			"previous_footer": "Utwór ostatnio odtwarzany przez {displayName}",
 			"rewind_limit": "Nie można cofnąć muzyki o więcej niż długość utworu.",
 			"rewinded": "Cofnięto muzykę.",
@@ -616,11 +616,12 @@
 			"forward_limit": "Nie można przesunąć muzyki do przodu o więcej niż długość utworu.",
 			"forwarded": "Przesunięto muzykę do przodu.",
 			"forward_footer": "Przesunięty do przodu przez {displayName}",
-			"button_not_available": "Ten przycisk jest niedostępny."
+			"button_not_available": "Ten przycisk jest niedostępny.",
+			"no_music_playing": "Na tym serwerze nie jest odtwarzana obecnie żadna muzyka."
 		}
 	},
-	"Evaluate code": "Evaluate code",
-	"Leave a guild": "Leave a guild",
-	"List all guilds the bot is in": "List all guilds the bot is in",
-	"Restart the bot": "Restart the bot"
+	"Evaluate code": "Ocena kodu",
+	"Leave a guild": "Opusć serwer",
+	"List all guilds the bot is in": "Lista wszystkich serwerów, w których jest bot",
+	"Restart the bot": "Uruchom ponownie bota"
 }

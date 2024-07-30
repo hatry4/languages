@@ -227,7 +227,7 @@
 		},
 		"grab": {
 			"description": "Obtiene la canción que se está reproduciendo actualmente en tu DM",
-			"content": "**Duración:** {length}\n**Solicitado por:** {requester}\n**Enlace:** [Haz clic aquí]({uri})",
+			"content": "**Duración:** {length}\n**Solicitado por:** <@{requester}>\n**Enlace:** [Haz clic aquí]({uri})",
 			"check_dm": "Por favor, revisa tu DM.",
 			"dm_failed": "No pude enviarte un DM."
 		},
@@ -251,7 +251,7 @@
 		"nowplaying": {
 			"description": "Muestra la canción que se está reproduciendo actualmente",
 			"now_playing": "Ahora se está reproduciendo",
-			"track_info": "[{title}]({uri}) - Solicitado por: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Solicitado por: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Pausa la canción actual",
@@ -289,9 +289,9 @@
 		},
 		"queue": {
 			"description": "Muestra la cola actual",
-			"now_playing": "Ahora se está reproduciendo: [{title}]({uri}) - Solicitado por: {requester} - Duración: {duration}",
+			"now_playing": "Ahora se está reproduciendo: [{title}]({uri}) - Solicitado por: <@{requester}> - Duración: {duration}",
 			"live": "EN DIRECTO",
-			"track_info": "{index}. [{title}]({uri}) - Solicitado por: {requester} - Duración: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Solicitado por: <@{requester}> - Duración: {duration}",
 			"title": "Cola",
 			"page_info": "Página {index} de {total}"
 		},
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
 			"error_searching": "There was an error while searching.",
 			"no_results": "There were no results found.",
 			"nothing_playing": "Nothing playing right now.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "No estás conectado a {channel} para usar estos botones.",
 			"now_playing": "Ahora se está reproduciendo",
 			"live": "EN DIRECTO",
-			"requested_by": "Solicitado por {requester}",
+			"requested_by": "Solicitado por <@{requester}>",
 			"no_dj_permission": "Debes tener el rol de DJ para usar este comando.",
 			"volume_set": "Volumen establecido en {vol}%",
 			"volume_footer": "Volumen: {vol}%",
@@ -616,7 +616,8 @@
 			"forward_limit": "No puedes avanzar la música más de la duración de la canción.",
 			"forwarded": "Se ha adelantado la música.",
 			"forward_footer": "Adelantado por {displayName}",
-			"button_not_available": "Este botón no está disponible."
+			"button_not_available": "Este botón no está disponible.",
+			"no_music_playing": "No se está reproduciendo nada ahora mismo."
 		}
 	},
 	"Evaluate code": "Evaluate code",

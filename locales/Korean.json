@@ -243,6 +243,7 @@
 			"content": "**길이:** {length}\n**요청자:** {requester}\n**링크:** [Click here]({uri})",
 			"check_dm": "DM을 확인해주세요.",
 			"dm_failed": "DM을 보내지 못했어요."
+
 		},
 		"join": {
 			"description": "봇이 음성 채널에 들어와요",
@@ -262,9 +263,11 @@
 			"looping_off": "**Looping is now off.**"
 		},
 		"nowplaying": {
+
 			"description": "현재 재생중인 노래를 알려줘요",
 			"now_playing": "재생 중",
 			"track_info": "[{title}]({uri}) - 요청자: {requester}\n\n`{bar}`"
+
 		},
 		"pause": {
 			"description": "노래를 일시정지해요",
@@ -532,6 +535,7 @@
 			"looping_off_by": "{user}에 의해 반복 꺼짐"
 		},
 		"setupStart": {
+
 			"now_playing": "재생 중",
 			"description": "[{title}]({uri}), 제작자 {author} • `[${length}]` - 요청자: <@{requester}>",
 			"error_searching": "노래를 검색하는 도중 오류가 발생했어요.",
@@ -541,6 +545,7 @@
 			"playlist_too_long": "플레이리스트 한도를 초과했어요. 최대 한도는 {maxPlaylistSize}개예요.",
 			"added_to_queue": "대기열에 추가되었어요: [{title}]({uri})",
 			"added_playlist_to_queue": "[{length}]개의 노래가 추가되었어요."
+
 		}
 	},
 	"event": {
@@ -617,6 +622,7 @@
 			"forwarded": "노래를 빨리감기했어요.",
 			"forward_footer": "{displayName}에 의해 빨리감기됨",
 			"button_not_available": "이 버튼은 사용할 수 없어요."
+
 		}
 	},
 	"Evaluate code": "코드를 실행해요",

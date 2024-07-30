@@ -240,7 +240,7 @@
 		},
 		"grab": {
 			"description": "Grabs the current playing song on your DM",
-			"content": "**Duration:** {length}\n**Requested by:** {requester}\n**Link:** [Click here]({uri})",
+			"content": "**Duration:** {length}\n**Requested by:** <@{requester}>\n**Link:** [Click here]({uri})",
 			"check_dm": "Please check your DM.",
 			"dm_failed": "I couldn't send you a DM."
 		},
@@ -264,7 +264,7 @@
 		"nowplaying": {
 			"description": "Shows the currently playing song",
 			"now_playing": "Now Playing",
-			"track_info": "[{title}]({uri}) - Requested By: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Requested By: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Pauses the current song",
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
 			"error_searching": "There was an error while searching.",
 			"no_results": "There were no results found.",
 			"nothing_playing": "Nothing playing right now.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "You are not connected to {channel} to use these buttons.",
 			"now_playing": "Now Playing",
 			"live": "LIVE",
-			"requested_by": "Requested by {requester}",
+			"requested_by": "Requested by <@{requester}>",
 			"no_dj_permission": "You need to have the DJ role to use this command.",
 			"volume_set": "Volume set to {vol}%",
 			"volume_footer": "Volume: {vol}%",
@@ -616,7 +616,8 @@
 			"forward_limit": "You cannot forward the music more than the length of the song.",
 			"forwarded": "Forwarded the music.",
 			"forward_footer": "Forwarded by {displayName}",
-			"button_not_available": "This button is not available."
+			"button_not_available": "This button is not available.",
+			"no_music_playing": "There is no music playing in this server."
 		}
 	},
 	"Evaluate code": "Evaluate code",
