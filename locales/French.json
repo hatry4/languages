@@ -227,7 +227,7 @@
 		},
 		"grab": {
 			"description": "Récupère la chanson en cours de lecture sur votre DM",
-			"content": "**Durée:** {length}\n**Demandé par:** {requester}\n**Lien:** [Cliquez ici]({uri})",
+			"content": "**Durée:** {length}\n**Demandé par:** <@{requester}>\n**Lien:** [Cliquez ici]({uri})",
 			"check_dm": "Veuillez vérifier votre DM.",
 			"dm_failed": "Je n'ai pas pu vous envoyer de DM."
 		},
@@ -251,7 +251,7 @@
 		"nowplaying": {
 			"description": "Affiche la chanson en cours de lecture",
 			"now_playing": "En cours de lecture",
-			"track_info": "[{title}]({uri}) - Demandé par: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Demandé par: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Met en pause la chanson actuelle",
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
 			"error_searching": "There was an error while searching.",
 			"no_results": "There were no results found.",
 			"nothing_playing": "Nothing playing right now.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "Vous n'êtes pas connecté à {channel} pour utiliser ces boutons.",
 			"now_playing": "En cours de lecture",
 			"live": "EN DIRECT",
-			"requested_by": "Demandé par {requester}",
+			"requested_by": "Demandé par <@{requester}>",
 			"no_dj_permission": "Vous devez avoir le rôle DJ pour utiliser cette commande.",
 			"volume_set": "Volume défini sur {vol}%",
 			"volume_footer": "Volume: {vol}%",
@@ -616,7 +616,8 @@
 			"forward_limit": "Vous ne pouvez pas avancer la musique plus que la longueur de la chanson.",
 			"forwarded": "Musique avancée.",
 			"forward_footer": "Avancé par {displayName}",
-			"button_not_available": "Ce bouton n'est pas disponible."
+			"button_not_available": "Ce bouton n'est pas disponible.",
+			"no_music_playing": "Rien ne joue en ce moment."
 		}
 	},
 	"Evaluate code": "Evaluate code",

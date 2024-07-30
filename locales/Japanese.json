@@ -239,10 +239,11 @@
 			}
 		},
 		"grab": {
-			"description": "現在再生中の曲をDMに送信します",
+    	"description": "現在再生中の曲をDMに送信します",
 			"content": "**再生時間:** {length}\n**リクエスト者:** {requester}\n**リンク:** [ここをクリック]({uri})",
 			"check_dm": "DMを確認してください。",
 			"dm_failed": "DMを送信できませんでした。"
+
 		},
 		"join": {
 			"description": "ボイスチャンネルに参加します",
@@ -262,6 +263,7 @@
 			"looping_off": "**ループがオフになりました。**"
 		},
 		"nowplaying": {
+
 			"description": "現在再生中の曲を表示します",
 			"now_playing": "再生中",
 			"track_info": "[{title}]({uri}) - リクエスト者: {requester}\n\n`{bar}`"
@@ -532,6 +534,7 @@
 			"looping_off_by": "{user} によってループオフ"
 		},
 		"setupStart": {
+
 			"now_playing": "再生中",
 			"description": "[{title}]({uri}) by {author} • `[${length}]` - <@{requester}> によってリクエストされました",
 			"error_searching": "検索中にエラーが発生しました。",
@@ -586,6 +589,7 @@
 			"different_voice_channel_queue": "曲をキューに入れるために <#{channel}> に接続されていません。"
 		},
 		"setupButton": {
+
 			"no_voice_channel_button": "このボタンを使用するにはボイスチャンネルに接続する必要があります。",
 			"different_voice_channel_button": "これらのボタンを使用するために {channel} に接続されていません。",
 			"now_playing": "再生中",

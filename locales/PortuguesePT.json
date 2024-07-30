@@ -227,7 +227,7 @@
 		},
 		"grab": {
 			"description": "Obtém a música que está a ser tocada no seu DM",
-			"content": "**Duração:** {length}\n**Solicitado por:** {requester}\n**Link:** [Clique aqui]({uri})",
+			"content": "**Duração:** {length}\n**Solicitado por:** <@{requester}>\n**Link:** [Clique aqui]({uri})",
 			"check_dm": "Por favor, verifique o seu DM.",
 			"dm_failed": "Não consegui enviar-lhe um DM."
 		},
@@ -251,7 +251,7 @@
 		"nowplaying": {
 			"description": "Mostra a música que está a ser tocada atualmente",
 			"now_playing": "A tocar agora",
-			"track_info": "[{title}]({uri}) - Solicitado por: {requester}\n\n`{bar}`"
+			"track_info": "[{title}]({uri}) - Solicitado por: <@{requester}>\n\n`{bar}`"
 		},
 		"pause": {
 			"description": "Pausa a música atual",
@@ -289,9 +289,9 @@
 		},
 		"queue": {
 			"description": "Mostra a fila atual",
-			"now_playing": "A tocar agora: [{title}]({uri}) - Solicitado por: {requester} - Duração: {duration}",
+			"now_playing": "A tocar agora: [{title}]({uri}) - Solicitado por: <@{requester}> - Duração: {duration}",
 			"live": "AO VIVO",
-			"track_info": "{index}. [{title}]({uri}) - Solicitado por: {requester} - Duração: {duration}",
+			"track_info": "{index}. [{title}]({uri}) - Solicitado por: <@{requester}> - Duração: {duration}",
 			"title": "Fila",
 			"page_info": "Página {index} de {total}"
 		},
@@ -336,7 +336,7 @@
 				"search_error": "Ocorreu um erro durante a pesquisa."
 			},
 			"messages": {
-				"added_to_queue": "Adicionado [{{title}}]({{uri}}) à fila."
+				"added_to_queue": "Adicionado [{title}]({uri}) à fila."
 			}
 		},
 		"seek": {
@@ -533,7 +533,7 @@
 		},
 		"setupStart": {
 			"now_playing": "Now Playing",
-			"description": "[{title}]({uri}) by {author} • `[${length}]` - Requested by <@{requester}>",
+			"description": "[{title}]({uri}) by {author} • `[{length}]` - Requested by <@{requester}>",
 			"error_searching": "There was an error while searching.",
 			"no_results": "There were no results found.",
 			"nothing_playing": "Nothing playing right now.",
@@ -590,7 +590,7 @@
 			"different_voice_channel_button": "Não está conectado a {channel} para usar esses botões.",
 			"now_playing": "A tocar agora",
 			"live": "AO VIVO",
-			"requested_by": "Solicitado por {requester}",
+			"requested_by": "Solicitado por <@{requester}>",
 			"no_dj_permission": "Precisa ter o papel de DJ para usar este comando.",
 			"volume_set": "Volume definido para {vol}%",
 			"volume_footer": "Volume: {vol}%",
@@ -616,7 +616,8 @@
 			"forward_limit": "Não pode avançar a música mais do que o comprimento da música.",
 			"forwarded": "A música foi avançada.",
 			"forward_footer": "Avançado por {displayName}",
-			"button_not_available": "Este botão não está disponível."
+			"button_not_available": "Este botão não está disponível.",
+			"no_music_playing": "Nada está a ser reproduzido neste momento."
 		}
 	}
 }
